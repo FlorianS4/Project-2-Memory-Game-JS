@@ -13,13 +13,25 @@ closeInstructions.addEventListener("click", function() {
 
 // Open Play page via Popup
 const openPlay = document.getElementById("playPageOpen");
+/*
 const closePlay = document.getElementById("playPageClose");
+*/
 const play = document.getElementById("play");
 
 openPlay.addEventListener("click", function() {
     play.classList.add("open");
 });
 
+/*
 closePlay.addEventListener("click", function() {
     play.classList.remove("open");
+});
+*/
+
+// Open Scoreboard in Play Page
+const openScoreboard = document.getElementById("scoreboardOpen");
+const scoreboard = document.getElementById("scoreboard");
+
+openScoreboard.addEventListener("click", function() {
+    scoreboard.classList.add("open");
 });

@@ -1,14 +1,12 @@
-// Add EventListener for redirect to instructions page
-const instructions = document.getElementById("instructions-page");
+// Open Instructions via Popup
+const openBtn = document.getElementById("instructionsPageOpen");
+const closeBtn = document.getElementById("instructionsPageClose");
+const instructions = document.getElementById("instructions");
 
-instructions.addEventListener("click", function() {
-    window.location="instructions.html";
-})
+openBtn.addEventListener("click", function() {
+    instructions.classList.add("open");
+});
 
-
-const logo = document.getElementsByClassName("heading");
-
-logo.addEventListener("click", function() {
-    window.location="index.html";
-})
-
+closeBtn.addEventListener("click", function() {
+    instructions.classList.remove("open");
+});

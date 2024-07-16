@@ -16,13 +16,22 @@
     <!-- Main menu section -->
     <section class="main-menu">
         <h1 class="heading">
+            <!-- link to main-menu via anchor element -->
             <a href="index.html"><img class="logo" src="assets/images/Halo-Logo.png" alt="logo" ></a>
         </h1>
         <p>Quiz</p>
 
-        <div>
-            <h2 class="heading2"><button class="btn" id="instructions-page">how to play</button></h2>
-        </div>
+        <!-- instructions Page as Popup -->
+        <button id="instructionsPageOpen">How to Play</button>
+            <div class="instructionsPage" id="instructions">
+                <div class="instructionsInner">
+                    <h2>Instructions</h2>
+                    <p>
+                        Press button to open and close the pop up.
+                    </p>
+                    <button id="instructionsPageClose">Click me, if you got the rules</button>
+                </div>
+            </div>
 
         <div> 
             <!-- link to another page via JS -->

@@ -1,12 +1,25 @@
 // Open Instructions via Popup
-const openBtn = document.getElementById("instructionsPageOpen");
-const closeBtn = document.getElementById("instructionsPageClose");
+const openInstructions = document.getElementById("instructionsPageOpen");
+const closeInstructions = document.getElementById("instructionsPageClose");
 const instructions = document.getElementById("instructions");
 
-openBtn.addEventListener("click", function() {
+openInstructions.addEventListener("click", function() {
     instructions.classList.add("open");
 });
 
-closeBtn.addEventListener("click", function() {
+closeInstructions.addEventListener("click", function() {
     instructions.classList.remove("open");
+});
+
+// Open Play page via Popup
+const openPlay = document.getElementById("playPageOpen");
+const closePlay = document.getElementById("playPageClose");
+const play = document.getElementById("play");
+
+openPlay.addEventListener("click", function() {
+    play.classList.add("open");
+});
+
+closePlay.addEventListener("click", function() {
+    play.classList.remove("open");
 });

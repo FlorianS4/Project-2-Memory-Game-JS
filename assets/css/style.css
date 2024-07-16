@@ -6,7 +6,7 @@ body {
 
 /* styling for instructionsPage popUp */
 .instructionsPage {
-    background-color: black;
+    background-color: rgb(153, 210 , 27);
     opacity: 0;
     position: fixed;
     top: 0;
@@ -22,6 +22,28 @@ body {
 }
 
 .instructionsPage.open {
+    opacity: 1;
+    z-index: 999;
+}
+
+/* styling for playPage and Popup */
+.playPage {
+    background-color: rgb(153, 210 , 27);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playPage.open {
     opacity: 1;
     z-index: 999;
 }

@@ -11,22 +11,27 @@ closeInstructions.addEventListener("click", function() {
     instructions.classList.remove("open");
 });
 
+
 // Open Play page via Popup
 const openPlay = document.getElementById("playPageOpen");
-/*
-const closePlay = document.getElementById("playPageClose");
-*/
 const play = document.getElementById("play");
 
 openPlay.addEventListener("click", function() {
     play.classList.add("open");
 });
 
-/*
-closePlay.addEventListener("click", function() {
-    play.classList.remove("open");
-});
-*/
+
+const moves = document.getElementById("moves-count");
+const timeValue = document.getElementById("time");
+const startButton = document.getElementById("start");
+const stopButton = document.getElementById("stop");
+const gameContainer = document.querySelector("container-game");
+
+
+
+
+
+
 
 // Open Scoreboard in Play Page
 const openScoreboard = document.getElementById("scoreboardOpen");

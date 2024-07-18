@@ -1,12 +1,20 @@
+/* Google fonts import */
+
+/* Asteriks selector */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: rgb(153, 210 , 27);
+    background-color: rgb(131, 139, 100);
     text-align: center;
 }
 
-
 /* styling for instructionsPage popUp */
 .instructionsPage {
-    background-color: rgb(153, 210 , 27);
+    background-color: rgb(135,146,80);
     opacity: 0;
     position: fixed;
     top: 0;
@@ -28,7 +36,7 @@ body {
 
 /* styling for playPage and Popup */
 .playPage {
-    background-color: rgb(153, 210 , 27);
+    background-color: rgb(135,146,80);
     opacity: 0;
     position: fixed;
     top: 0;
@@ -48,9 +56,29 @@ body {
     z-index: 999;
 }
 
+.display {
+    box-sizing: border-box;
+    width: 30em;
+    padding: 3em 3em;
+    background-color: rgb(153,210,27);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 20%;
+    border-radius: 0.5em;
+    box-shadow: 0 0.8em 3em rgba(131,139,100,0.3) ;
+}
+
+.container-game {
+    position: relative;
+    width: 100%;
+    display: grid;
+}
+
+
 /* styling for scoreboard and popup */
 .scoreboard {
-    background-color: rgb(153, 210 , 27);
+    background-color: rgb(135,146,80);
     opacity: 0;
     position: fixed;
     top: 0;

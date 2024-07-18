@@ -29,6 +29,9 @@ openScoreboard.addEventListener("click", function() {
     scoreboard.classList.add("open");
 });
 
+/**
+ * Global variables
+ */
 
 const moves = document.getElementById("moves-count");
 const timeValue = document.getElementById("time-to-bet");
@@ -44,7 +47,7 @@ let firstCard = false;
 let secondCard = false;
 
 //Items array
-const items = [
+const memoryCards = [
     { name: "master-chief-halo", image: "master-chief-halo.webp" },
     { name: "cortana-halo", image: "cortana-halo.webp" },
     { name: "arbiter-halo", imnge: "arbiter-halo.webp" },
@@ -72,7 +75,29 @@ let movesCount = 0, winCount = 0;
     let secondsValue = seconds < 10 ? `0${seconds}` : seconds;
     let minutesValue = minutes < 10 ? `0${minutes}` : minutes;
     timeValue.innerHTML = `<span>Time:</span>${minutesValue}:${secondsValue}`;
-
  };
 
 
+//For calculating moves
+const movesCounter = function() {
+    movesCount += 1;
+    moves.innerHTML = `<span>Moves:</span>${movesCount}`;
+}
+
+//Pick random objects from the items array
+const generateRandom = function(size = 4) {
+    //temporary array
+    let tempArray = [...memoryCards];
+    //initializes cardValues array
+    let cardValues = []
+    //size should be double (4*4 matrix)/2 since pairs of objects would exist
+    size = (size * size) / 2;
+    //Random object selection
+    for (let i = 0; i < size; i++) {
+        const randomIndex = Math.floor(Math.random() * tempArray.length);
+        cardValues.push(tempArray[randomIndex]);
+        //once selected remove the object from temp array
+        tempArray.splice(randomIndex, 1);
+    }
+    return cardValues;
+}

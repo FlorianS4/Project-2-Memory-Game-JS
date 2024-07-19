@@ -56,6 +56,24 @@ body {
     z-index: 999;
 }
 
+.playPage {
+
+}
+
+.memory-container {
+    width: 90%;
+}
+
+.card {
+    width: 25%;
+}
+
+.background-image,
+.card-image {
+    width: 200px;
+}
+
+
 /* styling for scoreboard and popup */
 .scoreboard {
     background-color: rgb(135,146,80);

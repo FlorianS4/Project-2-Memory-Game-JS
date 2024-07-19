@@ -13,13 +13,13 @@
 
 </head>
 <body>
-    <!-- Main menu section -->
     <section class="main-menu">
         <h1 class="heading">
             <!-- link to main-menu via anchor element -->
             <a href="index.html"><img class="logo" src="assets/images/Halo-Logo.png" alt="logo" ></a>
         </h1>
         <p>Quiz</p>
+
 
         <!-- instructions Page as Popup -->
         <button id="instructionsPageOpen">How to Play</button>
@@ -32,43 +32,93 @@
                     <button id="instructionsPageClose">Click me, if you got the rules</button>
                 </div>
             </div>
-        
+       
         <!-- Play Page via Popup -->
         <button id="playPageOpen">Play the Game</button>
             <div class="playPage" id="play">
-                <div class="playInner">
-                    <div class="display">
-                        <div class="container-stats">
-                            <div id="moves-count"></div>
-                            <div id="time-to-bet"></div>
-                        </div>
-                        <div class="container-game"></div>
-                        <button id="stop" class="hide-stop">Stop Game</button>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="assets/images/background-image-card.webp" alt="Background image" class="background-image">
+                        <img id="1" src="assets/images/master-chief-halo.webp" alt="Master Chief Image" class="card-image">
                     </div>
-                    
-                    <div class="container-controls">
-                        <p id="result"></p>
-                        <button id="start">Start Game</button>
+                    <div class="card">
+                        <img src="assets/images/background-image-card.webp" alt="Background image" class="background-image">
+                        <img id="2" src="assets/images/arbiter-halo.webp" alt="Arbiter image" class="card-image">
                     </div>
-                    
+                    <div class="card">
+                        <img src="assets/images/background-image-card.webp" alt="Background image" class="background-image">
+                        <img id="3" src="assets/images/cortana-halo.webp" alt="Cortana image" class="card-image">
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/background-image-card.webp" alt="Background image" class="background-image">
+                        <img id="4" src="assets/images/avery-johnson-halo.webp" alt="Avery Johnson image" class="card-image">
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/background-image-card.webp" alt="Background image" class="background-image">
+                        <img id="5" src="assets/images/halo-energy-sword.webp" alt="Energy Sword image" class="card-image">
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/background-image-card.webp" alt="Background image" class="background-image">
+                        <img id="6" src="assets/images/halo-ring-installation.webp" alt="Halo Installation image" class="card-image">
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/background-image-card.webp" alt="Background image" class="background-image">
+                        <img id="7" src="assets/images/master-chief-helmet-halo.webp" alt="Master Chief Helmet image" class="card-image">
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/background-image-card.webp" alt="Background image" class="background-image">
+                        <img id="8" src="assets/images/unsc-logo-halo.webp" alt="UNSC Logo image" class="card-image">
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/background-image-card.webp" alt="Background image" class="background-image">
+                        <img id="9" src="assets/images/master-chief-halo.webp" alt="Master Chief Image" class="card-image">
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/background-image-card.webp" alt="Background image" class="background-image">
+                        <img id="10" src="assets/images/arbiter-halo.webp" alt="Arbiter image" class="card-image">
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/background-image-card.webp" alt="Background image" class="background-image">
+                        <img id="11" src="assets/images/cortana-halo.webp" alt="Cortana image" class="card-image">
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/background-image-card.webp" alt="Background image" class="background-image">
+                        <img id="12" src="assets/images/avery-johnson-halo.webp" alt="Avery Johnson image" class="card-image">
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/background-image-card.webp" alt="Background image" class="background-image">
+                        <img id="13" src="assets/images/halo-energy-sword.webp" alt="Energy Sword image" class="card-image">
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/background-image-card.webp" alt="Background image" class="background-image">
+                        <img id="14" src="assets/images/halo-ring-installation.webp" alt="Halo Installation image" class="card-image">
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/background-image-card.webp" alt="Background image" class="background-image">
+                        <img id="15" src="assets/images/master-chief-helmet-halo.webp" alt="Master Chief Helmet image" class="card-image">
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/background-image-card.webp" alt="Background image" class="background-image">
+                        <img id="16" src="assets/images/unsc-logo-halo.webp" alt="UNSC Logo image" class="card-image">
+                    </div>
+                </div>  
 
-                    <button id="scoreboardOpen">Scoreboard</button>
-                        <div class="scoreboard" id="scoreboard">
-                            <div class="scoreboardInner">
-                                <h2>SCOREBOARD</h2>
+                <button id="scoreboardOpen">Scoreboard</button>
+                    <div class="scoreboard" id="scoreboard">
+                        <div class="scoreboardInner">
+                            <h2>SCOREBOARD</h2>
                                 <p>
                                     Display Scoreboard here!
                                 </p>
-                                <a href="index.html"><button>Return to Main Page</button></a>
-                            </div>
+                            <a href="index.html"><button>Return to Main Page</button></a>
                         </div>
-
-                    <!-- <button id="playPageClose">Close Play area</button> -->
-                </div>
+                    </div>
             </div>
      </section>
+    <!-- Main menu section -->
+   
+  
 
-    
     <!-- JavaScript -->
      <script src="assets/js/script.js"></script>
 </body>

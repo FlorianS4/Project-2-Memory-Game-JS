@@ -57,20 +57,48 @@ body {
 }
 
 .playPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
 
+.game-section {
+    width: 900px;
+    padding: 10px;
+    border-radius: 5px;
+    row-gap: 10px;
 }
 
 .memory-container {
-    width: 90%;
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-gap: 25px 10px;
+    place-items: center;
 }
 
 .card {
-    width: 25%;
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
 }
 
-.background-image,
-.card-image {
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
     width: 200px;
+}
+
+.card-image {
+    height: 200px;
+    width: 200px;
+    transform: rotateY(-90deg);
+    transition: all 0.3s ease-in ;
 }
 
 

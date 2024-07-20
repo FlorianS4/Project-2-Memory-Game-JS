@@ -39,8 +39,12 @@ openScoreboard.addEventListener("click", function() {
 
 
 const cards = document.getElementsByClassName("card");
-
 let allMemory = document.getElementsByClassName("card-image");
+let movesDisplay = document.getElementById("moves-counter");
+let toggledCardsArray = [];
+let move = 0;
+let winCount = 0;
+const restart = document.getElementById("restart-btn");
 
 
 const memoryArray = [
@@ -109,3 +113,24 @@ const memoryArray = [
         image: document.getElementById("UNSC Logo image")
     }
 ]
+
+const restartGame = function() {
+    let toggledCard = document.getElementsByClassName("card toggled");
+    memoryArray.sort(function() { Math.random() - 0.5});
+    Object.values(toggledCard).forEach(function (el) {
+        setTimeout (function() {
+            el.classList.remove("toggled");
+        }, 0);
+    })
+    toggledCardsArray.length = 0;
+    move = 0;
+    winCount = 0;
+    movesDisplay.innerText = `Moves: ${move}`;
+    let allMemorySrc = document.getElementsByClassName("card-image");
+    Object.values(allMemorySrc).forEach(function(el, index) {
+        el.src = imagesLinkArray[index].image;
+        el.alt = imagesLinkArray[index].newAlt;
+        el.id = imagesLinkArray[index].id
+    })
+}
+restart.addEventListener("click", restartGame);

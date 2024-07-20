@@ -134,3 +134,35 @@ const restartGame = function() {
     })
 }
 restart.addEventListener("click", restartGame);
+
+//checking for the last clicked and current
+//clicked cards and applying changes accordingly
+
+for (var i = 0; i < cards.length; i++) {
+    cards[i].addEventListener("click", function() {
+        this.classList.add("toggled");
+        toggledCardsArray.push(this);
+        let thisImgSrc = this.querySelector(".card-image").src;
+        let previousImgSrc = toggledCardsArray[toggledCardsArray.length - 2].querySelector(".card-image").src;
+        if(thisImgSrc !== previousImgSrc) {
+            toggledCardsArray.forEach(function (el) {
+                setTimeout(() => { 
+                    el.classList.remove("toggled"); 
+                }, 500); 
+            }) 
+            toggledCardsArray.length = 0; 
+            move++; 
+        } 
+        else{ 
+            toggledCardsArray.length = 0; 
+            move++; 
+            winCount++; 
+        } 
+        movesDisplay.innerText = `Moves: ${move}`; 
+        if(winCount===6){ 
+            setTimeout(()=>{ 
+                alert(`Congratulations!!! You won the game in ${move} moves.`) 
+            }, 300) 
+        } 
+    }) 
+}

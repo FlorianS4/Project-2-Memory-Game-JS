@@ -37,8 +37,51 @@ openScoreboard.addEventListener("click", function() {
     scoreboard.classList.add("open");
 });
 
+// Memory Game Play
+let cardElements = document.getElementsByClassName("memory-card");
+let CardElementsArray = [...cardElements];
+let webpElments = document.getElementsByClassName("memory-card-webp");
+let webpElementsArray = [...webpElments];
+let counter = document.getElementById("moveCounter");
+let timer = document.getElementById("timer");
 
-// Variables used
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * // Variables used
 const cards = document.getElementsByClassName("card");
 let allMemory = document.getElementsByClassName("card-image");
 let movesDisplay = document.getElementById("move-counter");
@@ -137,7 +180,18 @@ const restartGame = function() {
 }
 restart.addEventListener("click", restartGame);
 
+// Shuffle function
+function shuffle(memoryArray) {
+    let currentIndex = memoryArray.lenght;
+    while (currentIndex != 0) {
+        let randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+        [memoryArray[currentIndex], memoryArray[randomIndex]] = [
+            memoryArray[randomIndex], memoryArray[currentIndex]];
+    }
+}
 
+shuffle.addEventListener("click", restartGame);
 
 //checking for the last clicked and current
 //clicked cards and applying changes accordingly
@@ -170,3 +224,6 @@ for (var i = 0; i < cards.length; i++) {
         } 
     }) 
 }
+ */
+
+

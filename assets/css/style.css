@@ -77,12 +77,12 @@ body {
     border-radius: 0.3em;
 }
 
-.game-grid-row {
+.memory-grid-row {
     display: flex;
     flex-wrap: nowrap;
 }
 
-.game-card {
+.memory-card {
     width: 225px;
     height: 225px;
     background: url(../images/background-image-card.webp) no-repeat center center/cover;
@@ -91,7 +91,7 @@ body {
     cursor: pointer;
 }
 
-.game-card-webp {
+.memory-card-webp {
     visibility: hidden;
     object-fit: cover;
     width: 225px;

@@ -38,15 +38,16 @@ openScoreboard.addEventListener("click", function() {
 });
 
 
+// Variables used
 const cards = document.getElementsByClassName("card");
 let allMemory = document.getElementsByClassName("card-image");
-let movesDisplay = document.getElementById("moves-counter");
+let movesDisplay = document.getElementById("move-counter");
 let toggledCardsArray = [];
 let move = 0;
 let winCount = 0;
 const restart = document.getElementById("restart-btn");
 
-
+// Array list for img
 const memoryArray = [
     {
         id: 1,
@@ -114,6 +115,7 @@ const memoryArray = [
     }
 ]
 
+// Restart function
 const restartGame = function() {
     let toggledCard = document.getElementsByClassName("card toggled");
     memoryArray.sort(function() { Math.random() - 0.5});
@@ -134,6 +136,8 @@ const restartGame = function() {
     })
 }
 restart.addEventListener("click", restartGame);
+
+
 
 //checking for the last clicked and current
 //clicked cards and applying changes accordingly
@@ -159,7 +163,7 @@ for (var i = 0; i < cards.length; i++) {
             winCount++; 
         } 
         movesDisplay.innerText = `Moves: ${move}`; 
-        if(winCount===6){ 
+        if(winCount === 8){ 
             setTimeout(()=>{ 
                 alert(`Congratulations!!! You won the game in ${move} moves.`) 
             }, 300) 

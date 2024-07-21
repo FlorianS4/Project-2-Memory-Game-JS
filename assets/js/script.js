@@ -39,12 +39,24 @@ openScoreboard.addEventListener("click", function() {
 
 // Memory Game Play
 let cardElements = document.getElementsByClassName("memory-card");
-let CardElementsArray = [...cardElements];
+let cardElementsArray = [...cardElements];
 let webpElments = document.getElementsByClassName("memory-card-webp");
 let webpElementsArray = [...webpElments];
 let counter = document.getElementById("moveCounter");
 let timer = document.getElementById("timer");
 
+
+// Display Card function
+let displayCard = function() {
+    this.children[0].classList.toggle("show-webp");
+    this.classList.toggle("open");
+    this.classList.toggle("show");
+    this.classList.toggle("disabled");
+}
+
+for (let i = 0; i < cardElementsArray.length; i++) {
+    cardElementsArray[i].addEventListener("click", displayCard);
+}
 
 
 

@@ -38,9 +38,9 @@ openScoreboard.addEventListener("click", function() {
 });
 
 // Memory Game Play
-let cardElements = document.getElementsByClassName("memory-card");
-let cardElementsArray = [...cardElements];
-let webpElments = document.getElementsByClassName("memory-card-webp");
+let memoryElements = document.getElementsByClassName("memory-card");
+let memoryElementsArray = [...memoryElements];
+let webpElements = document.getElementsByClassName("memory-card-webp");
 let webpElementsArray = [...webpElments];
 let counter = document.getElementById("moveCounter");
 let timer = document.getElementById("timer");
@@ -54,10 +54,34 @@ let displayCard = function() {
     this.classList.toggle("disabled");
 }
 
-for (let i = 0; i < cardElementsArray.length; i++) {
-    cardElementsArray[i].addEventListener("click", displayCard);
+//Shuffle function called Fisher-Yates Shuffle
+function shuffle(array) {
+    let currentIndex = array.length, temporaryValue, randomIndex;
+    while (currentIndex !==0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array;
 }
 
+// Start Game function
+function startGame() {
+    let shuffledWebp = shuffle(webpElementsArray);
+    console.log(shuffledWebp);
+    for(i = 0; i < shuffledWebp.length; i++) {
+        memoryElements[i].appendChild(shuffledWebp[i]);
+    }
+}
+
+window.onload = startGame();
+
+for (let i = 0; i < memoryElementsArray.length; i++) {
+    memoryElementsArray[i].addEventListener("click", displayCard);
+}
 
 
 

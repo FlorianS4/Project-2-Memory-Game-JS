@@ -44,14 +44,17 @@ let webpElements = document.getElementsByClassName("memory-card-webp");
 let webpElementsArray = [...webpElments];
 let counter = document.getElementById("moveCounter");
 let timer = document.getElementById("timer");
+let openedMemorys = [];
+let matchedMemorys = [];
 
 
 // Display Card function
-let displayCard = function() {
+let displayMemory = function() {
     this.children[0].classList.toggle("show-webp");
     this.classList.toggle("open");
     this.classList.toggle("show");
     this.classList.toggle("disabled");
+    cardMemory(this);
 }
 
 //Shuffle function called Fisher-Yates Shuffle
@@ -71,16 +74,68 @@ function shuffle(array) {
 // Start Game function
 function startGame() {
     let shuffledWebp = shuffle(webpElementsArray);
-    console.log(shuffledWebp);
     for(i = 0; i < shuffledWebp.length; i++) {
         memoryElements[i].appendChild(shuffledWebp[i]);
+        memoryElements[i].type = `${shuffledWebp[i].alt}`;
     }
+}
+
+function memoryOpen(memory) {
+    openedMemorys.push(memory);
+    let len = openedMemorys.length;
+    if(len === 2) {
+        if(openedMemorys[0].type === openedMemorys[1].type) {
+            matched();
+        } else {
+            unmatched();
+        }
+    }
+}
+
+
+function matched() {
+    openedMemorys[0].classList.add("match");
+    openedMemorys[1].classList.add("match");
+    openedMemorys[0].classList.remove("show", "open");
+    openedMemorys[1].classList.remove("show", "open");
+    matchedMemorys.push(openedMemorys[0]);
+    matchedMemorys.push(openedMemorys[1]);
+    openedMemorys = [];
+}
+
+function unmatched() {
+    openedMemorys[0].classList.add("unmatched");
+    openedMemorys[1].classList.add("unmatched");
+    disable();
+    setTimeout(function() {
+        openedMemorys[0].classList.remove("show", "open", "unmatched");
+        openedMemorys[1].classList.remove("show", "open", "unmatched");
+        openedMemorys[0].children[0].classList.remove("show-webp");
+        openedMemorys[1].children[0].classList.remove("show-webp");
+        enable();
+        openedMemorys = [];
+    }, 1100)
+}
+
+function disable() {
+    memoryElementsArray.filter((card, i, memoryElementsArray) => {
+        memory.classList.add("disabled");
+    })
+}
+
+function enable() {
+    memoryElementsArray.filter((card, i, memoryElementsArray) => {
+        memory.classList.remove("disabled");
+        for(let i=0; i < matchedMemorys.length; i++) {
+            matchedMemorys[i].classList.add("disabled");
+        }
+    })
 }
 
 window.onload = startGame();
 
 for (let i = 0; i < memoryElementsArray.length; i++) {
-    memoryElementsArray[i].addEventListener("click", displayCard);
+    memoryElementsArray[i].addEventListener("click", displayMemory);
 }
 
 

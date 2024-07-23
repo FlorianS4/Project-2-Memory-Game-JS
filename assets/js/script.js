@@ -47,6 +47,10 @@ let timer = document.getElementById("timer");
 let openedMemorys = [];
 let matchedMemorys = [];
 let moves;
+let second = 0,
+    minute = 0,
+    hour = 0,
+    interval;
 
 
 // Display Card function
@@ -55,7 +59,7 @@ let displayMemory = function() {
     this.classList.toggle("open");
     this.classList.toggle("show");
     this.classList.toggle("disabled");
-    cardMemory(this);
+    memoryOpen(this);
 }
 
 //Shuffle function called Fisher-Yates Shuffle
@@ -139,6 +143,28 @@ function enable() {
 function moveCounter() {
     moves++;
     counter.innerHTML = `${moves} move(s)`;
+
+    if(moves == 1) {
+        second = 0;
+        minute = 0;
+        hour = 0;
+        startTimer();
+    }
+}
+
+function startTimer() {
+    interval = setInterval(function() {
+        timer.innerHTML = `${minute} mins ${second} secs`;
+        second++;
+        if(second == 60) {
+            minute++;
+            second = 0;
+        }
+        if(minute == 60) {
+            hour++;
+            minute = 0;
+        }
+    }, 1000)
 }
 
 window.onload = startGame();

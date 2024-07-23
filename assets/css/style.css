@@ -98,6 +98,16 @@ body {
     height: 225px;
 }
 
+/* styling for JS */
+.show-webp {
+    visibility: visible;
+    animation: animateShowImage 0.4s linear alternate;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
 /* styling for scoreboard and popup */
 .scoreboard {
     background-color: rgb(135,146,80);

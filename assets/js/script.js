@@ -52,19 +52,11 @@ let second = 0,
     hour = 0,
     interval;
 
-
-// Display Card function
-let displayMemory = function() {
-    this.children[0].classList.toggle("show-webp");
-    this.classList.toggle("open");
-    this.classList.toggle("show");
-    this.classList.toggle("disabled");
-    memoryOpen(this);
-}
-
-//Shuffle function called Fisher-Yates Shuffle
+    //Shuffle function called Fisher-Yates Shuffle
 function shuffle(array) {
-    let currentIndex = array.length, temporaryValue, randomIndex;
+    let currentIndex = array.length,
+        temporaryValue,
+        randomIndex;
     while (currentIndex !==0) {
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex -= 1;
@@ -78,13 +70,40 @@ function shuffle(array) {
 
 // Start Game function
 function startGame() {
-    moves = 0;
-    counter.innerText = `${moves} move(s)`;
+    //Shuffle cards
     let shuffledWebp = shuffle(webpElementsArray);
     for(i = 0; i < shuffledWebp.length; i++) {
+        //remove images from each memory card
+        memoryElements[i].innerHTML = "";
+        //add shuffled memory images to each memory card
         memoryElements[i].appendChild(shuffledWebp[i]);
         memoryElements[i].type = `${shuffledWebp[i].alt}`;
+        //remove all extra classes for game play
+        memoryElements[i].classList.remove("show", "open", "match", "disabled");
+        memoryElements[i].children[0].classList.remove("show-webp")
     }
+
+    //listen for events on memory cards
+    for(let i = 0; i < memoryElementsArray.length; i++) {
+        memoryElementsArray[i].addEventListener("click", displayMemory)
+    }
+
+    //reset moves on game reset
+    moves = 0;
+    counter.innerText = `${moves} move(s)`;
+
+    //reset timer on game reset
+    timer.innerHTML = `0 mins 0 secs`;
+    clearInterval(interval);
+}
+
+// Display Card function
+function displayMemory() {
+    this.children[0].classList.toggle("show-webp");
+    this.classList.toggle("open");
+    this.classList.toggle("show");
+    this.classList.toggle("disabled");
+    memoryOpen(this);
 }
 
 function memoryOpen(memory) {
@@ -100,7 +119,6 @@ function memoryOpen(memory) {
     }
 }
 
-
 function matched() {
     openedMemorys[0].classList.add("match");
     openedMemorys[1].classList.add("match");
@@ -109,6 +127,9 @@ function matched() {
     matchedMemorys.push(openedMemorys[0]);
     matchedMemorys.push(openedMemorys[1]);
     openedMemorys = [];
+    if(matchedMemorys.length == 16) {
+        endGame();
+    }
 }
 
 function unmatched() {
@@ -126,13 +147,13 @@ function unmatched() {
 }
 
 function disable() {
-    memoryElementsArray.filter((card, i, memoryElementsArray) => {
+    memoryElementsArray.filter((memory, i, memoryElementsArray) => {
         memory.classList.add("disabled");
     })
 }
 
 function enable() {
-    memoryElementsArray.filter((card, i, memoryElementsArray) => {
+    memoryElementsArray.filter((memory, i, memoryElementsArray) => {
         memory.classList.remove("disabled");
         for(let i=0; i < matchedMemorys.length; i++) {
             matchedMemorys[i].classList.add("disabled");
@@ -169,9 +190,6 @@ function startTimer() {
 
 window.onload = startGame();
 
-for (let i = 0; i < memoryElementsArray.length; i++) {
-    memoryElementsArray[i].addEventListener("click", displayMemory);
-}
 
 
 

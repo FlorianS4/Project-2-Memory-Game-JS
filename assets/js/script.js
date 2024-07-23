@@ -41,11 +41,12 @@ openScoreboard.addEventListener("click", function() {
 let memoryElements = document.getElementsByClassName("memory-card");
 let memoryElementsArray = [...memoryElements];
 let webpElements = document.getElementsByClassName("memory-card-webp");
-let webpElementsArray = [...webpElments];
+let webpElementsArray = [...webpElements];
 let counter = document.getElementById("moveCounter");
 let timer = document.getElementById("timer");
 let openedMemorys = [];
 let matchedMemorys = [];
+let moves;
 
 
 // Display Card function
@@ -73,6 +74,8 @@ function shuffle(array) {
 
 // Start Game function
 function startGame() {
+    moves = 0;
+    counter.innerText = `${moves} move(s)`;
     let shuffledWebp = shuffle(webpElementsArray);
     for(i = 0; i < shuffledWebp.length; i++) {
         memoryElements[i].appendChild(shuffledWebp[i]);
@@ -84,6 +87,7 @@ function memoryOpen(memory) {
     openedMemorys.push(memory);
     let len = openedMemorys.length;
     if(len === 2) {
+        moveCounter();
         if(openedMemorys[0].type === openedMemorys[1].type) {
             matched();
         } else {
@@ -130,6 +134,11 @@ function enable() {
             matchedMemorys[i].classList.add("disabled");
         }
     })
+}
+
+function moveCounter() {
+    moves++;
+    counter.innerHTML = `${moves} move(s)`;
 }
 
 window.onload = startGame();

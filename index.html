@@ -108,6 +108,19 @@
                 <div class="restart-button-div">
                     <button class="restart-button" id="restartButton" onclick="startGame()">Restart Game</button>
                 </div>
+
+                <!-- Info after game, about score -->
+                <div class="game-end-score" id="gameEndScore">
+                    <div class="after-game-score-screen">
+                        <h2>Game Over</h2>
+                        <div class="score-screen-body">
+                            <p>
+                                Congratulations, you completed the game using <span id="totalMoves"></span> Moves
+                                <br>in <span id="gameTime"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
                
                 <button id="scoreboardOpen">Scoreboard</button>
                     <div class="scoreboard" id="scoreboard">

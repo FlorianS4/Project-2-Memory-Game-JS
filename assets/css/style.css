@@ -98,6 +98,16 @@ body {
     height: 225px;
 }
 
+/* styling for End Game Score Display as Pop-up */
+.game-end-score {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(135,146,80);
+}
+
 /* styling for JS */
 .show-webp {
     visibility: visible;
@@ -106,6 +116,10 @@ body {
 
 .disabled {
     pointer-events: none;
+}
+
+.show-game-end-score {
+    display: block;
 }
 
 /* styling for scoreboard and popup */

@@ -51,6 +51,12 @@ let second = 0,
     minute = 0,
     hour = 0,
     interval;
+let endScreen = document.getElementById("gameEndScore");
+let totalGameMoves = document.getElementById("totalMoves");
+let totalGameTime = document.getElementById("gameTime");
+
+
+
 
     //Shuffle function called Fisher-Yates Shuffle
 function shuffle(array) {
@@ -193,6 +199,22 @@ function startTimer() {
 function endGame() {
     clearInterval(interval);
     totalGameTime = timer.innerHTML;
+
+    // show end screen score 
+    endScreen.classList.add("show-game-end-score");
+
+    // show total Game Moves and Game Time in end screen
+    totalGameMoves.innerHTML = moves;
+    totalGameTime.innerHTML = totalGameTime;
+
+    matchedMemorys = [];
+    scoreDisplay();
+}
+
+function scoreDisplay() {
+    endScreen.addEventListener("click", function() {
+        endScreen.classList.remove("show-game-end-score");
+    })
 }
 
 window.onload = startGame();

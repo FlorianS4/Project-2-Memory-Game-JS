@@ -106,6 +106,7 @@ function displayMemory() {
     memoryOpen(this);
 }
 
+// Memory Game function
 function memoryOpen(memory) {
     openedMemorys.push(memory);
     let len = openedMemorys.length;
@@ -186,6 +187,12 @@ function startTimer() {
             minute = 0;
         }
     }, 1000)
+}
+
+//End of Memory game function
+function endGame() {
+    clearInterval(interval);
+    totalGameTime = timer.innerHTML;
 }
 
 window.onload = startGame();

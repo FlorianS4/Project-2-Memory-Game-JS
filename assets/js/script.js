@@ -44,17 +44,17 @@ let webpElements = document.getElementsByClassName("memory-card-webp");
 let webpElementsArray = [...webpElements];
 let counter = document.getElementById("moveCounter");
 let timer = document.getElementById("timer");
+let endScreen = document.getElementById("gameEndScore");
+let totalGameMoves = document.getElementById("totalMoves");
+let totalGameTimeDisplay = document.getElementById("gameTime");
 let openedMemorys = [];
 let matchedMemorys = [];
 let moves;
 let second = 0,
     minute = 0,
     hour = 0,
-    interval;
-let endScreen = document.getElementById("gameEndScore");
-let totalGameMoves = document.getElementById("totalMoves");
-let totalGameTime = document.getElementById("gameTime");
-
+    interval,
+    totalGameTime;
 
 
 
@@ -205,7 +205,7 @@ function endGame() {
 
     // show total Game Moves and Game Time in end screen
     totalGameMoves.innerHTML = moves;
-    totalGameTime.innerHTML = totalGameTime;
+    totalGameTimeDisplay.innerHTML = totalGameTime;
 
     matchedMemorys = [];
     scoreDisplay();

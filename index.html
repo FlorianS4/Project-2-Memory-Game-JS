@@ -22,7 +22,7 @@
 
 
             <!-- instructions Page as Popup -->
-            <button id="instructionsPageOpen">How to Play</button>
+            <button class="buttons" id="instructionsPageOpen">How to Play</button>
             <div class="instructionsPage" id="instructions">
                 <div id="instruction-container">
                     <div class="instructionsInner">
@@ -30,13 +30,13 @@
                         <p>
                             Press button to open and close the pop up.
                         </p>
-                        <button id="instructionsPageClose">Click me, if you got the rules</button>
+                        <button class="buttons" id="instructionsPageClose">Click me, if you got the rules</button>
                     </div>
                 </div>    
             </div>
        
             <!-- Play Page via Popup -->
-            <button id="playPageOpen">Play the Game</button>
+            <button class="buttons" id="playPageOpen">Play the Game</button>
         </div>
             <div class="playPage" id="play">
 
@@ -44,7 +44,7 @@
                 <div class="game-status">
                     <div class="move-counter" id="moveCounter"></div>
                     <div class="timer" id="timer">0 mins 0 secs</div>
-                    <button class="restart-button" id="restartButton" onclick="startGame()" aria-label="restart game">Restart Game</button>
+                    <button class="restart-button buttons" id="restartButton" onclick="startGame()" aria-label="restart game">Restart Game</button>
                 </div>
 
                 <!-- Table for webp images -->
@@ -119,21 +119,20 @@
                                 <br>in <span id="gameTime"></span>
                             </p>
                         </div>
+                        <button class="buttons" id="scoreboardOpen">Scoreboard</button>
+                        <div class="scoreboard" id="scoreboard">
+                            <div id="scoreboard-container">
+                                <div class="scoreboardInner">
+                                    <h2>SCOREBOARD</h2>
+                                        <p>
+                                            Display Scoreboard here!
+                                        </p>
+                                    <a href="index.html"><button class="return-button buttons">Return to Main Page</button></a>
+                                </div>
+                            </div>   
+                        </div>
                     </div>
                 </div>
-               
-                <button id="scoreboardOpen">Scoreboard</button>
-                    <div class="scoreboard" id="scoreboard">
-                        <div id="scoreboard-container">
-                            <div class="scoreboardInner">
-                                <h2>SCOREBOARD</h2>
-                                    <p>
-                                        Display Scoreboard here!
-                                    </p>
-                                <a href="index.html"><button class="return-button">Return to Main Page</button></a>
-                            </div>
-                        </div>   
-                    </div>
             </div>
      </section>
     <!-- Main menu section -->

@@ -64,6 +64,18 @@ h3 {
     z-index: 999;
 }
 
+/* styling for button on instructionpage */
+#instructionsPageClose {
+    width: 50%;
+    align-self: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 20px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 110%;
+}
+
 /* styling for playPage and Popup */
 .playPage {
     background-color: rgb(135,146,80);

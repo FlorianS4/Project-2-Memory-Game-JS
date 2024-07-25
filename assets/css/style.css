@@ -260,3 +260,13 @@ h3 {
     opacity: 1;
     z-index: 999;
 }
+
+#scoreboard-show {
+    width: 1000px;
+    height: 1000px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(142,167,47);
+    border-radius: 0.3em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}

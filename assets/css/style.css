@@ -21,6 +21,34 @@ h3 {
     font-family: 'Rajdhani', sans-serif;
 }
 
+.main-menu {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    align-content: center;
+}
+
+#main-menu-homepage {
+    width: 1000px;
+    height: 1000px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(142,167,47);
+    border-radius: 0.3em;
+}
+
+/* styling for logo */
+.logo {
+    padding-top: 150px;
+}
+
 /* styling for h1 heading */
 .heading {
     letter-spacing: 2px;

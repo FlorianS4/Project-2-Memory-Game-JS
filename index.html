@@ -44,7 +44,7 @@
                 <div class="game-status">
                     <div class="move-counter" id="moveCounter"></div>
                     <div class="timer" id="timer">0 mins 0 secs</div>
-                    <button class="restart-btn" id="restartBtn" onclick="startGame()" aria-label="restart game">Restart Game</button>
+                    <button class="restart-button" id="restartButton" onclick="startGame()" aria-label="restart game">Restart Game</button>
                 </div>
 
                 <!-- Table for webp images -->
@@ -108,9 +108,6 @@
                         </tr>
                     </tbody>
                 </table>
-                <div class="restart-button-div">
-                    <button class="restart-button" id="restartButton" onclick="startGame()">Restart Game</button>
-                </div>
 
                 <!-- Info after game, about score -->
                 <div class="game-end-score" id="gameEndScore">
@@ -127,13 +124,13 @@
                
                 <button id="scoreboardOpen">Scoreboard</button>
                     <div class="scoreboard" id="scoreboard">
-                        <div id="scoreboard-show">
+                        <div id="scoreboard-container">
                             <div class="scoreboardInner">
                                 <h2>SCOREBOARD</h2>
                                     <p>
                                         Display Scoreboard here!
                                     </p>
-                                <a href="index.html"><button>Return to Main Page</button></a>
+                                <a href="index.html"><button class="return-button">Return to Main Page</button></a>
                             </div>
                         </div>   
                     </div>

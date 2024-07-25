@@ -205,6 +205,22 @@ h3 {
     height: 225px;
 }
 
+#restartButton {
+    width: 30%;
+    align-self: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 20px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 110%;
+}
+
+#restartButton:hover {
+    background-color: #374E95;
+    color: white;
+}
+
 /* styling for End Game Score Display as Pop-up */
 .game-end-score {
     display: none;
@@ -261,7 +277,7 @@ h3 {
     z-index: 999;
 }
 
-#scoreboard-show {
+#scoreboard-container {
     width: 1000px;
     height: 1000px;
     margin-left: 20px;
@@ -269,4 +285,20 @@ h3 {
     background-color: rgb(142,167,47);
     border-radius: 0.3em;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+}
+
+.return-button {
+    width: 30%;
+    align-self: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 20px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 110%;
+}
+
+.return-button:hover {
+    background-color: #374E95;
+    color: white;
 }

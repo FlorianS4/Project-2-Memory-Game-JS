@@ -45,7 +45,8 @@ h3 {
 /* hover function for button */
 #instructionsPageOpen:hover,
 #playPageOpen:hover {
-    background-color: aqua;
+    background-color: #374E95;
+    color: white;
 }
 
 
@@ -85,7 +86,8 @@ h3 {
 
 /* hover function for button on instructionpage */
 #instructionsPageClose:hover {
-    background-color: aqua;
+    background-color: #374E95;
+    color: white;
 }
 
 /* styling for playPage and Popup */

@@ -261,3 +261,23 @@ h3 {
     border-radius: 0.3em;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
+
+/* media query for phone screens */
+@media screen and (min-width: 375px) {
+
+    /* Logo */
+    .logo {
+        padding-top: 5px;
+        width: 80%;
+    }
+
+    #main-menu-homepage {
+        width: 350px;
+        height: 600px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: rgb(142,167,47);
+        border-radius: 0.3em;
+        box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    }
+}

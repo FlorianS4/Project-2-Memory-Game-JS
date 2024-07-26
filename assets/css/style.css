@@ -9,7 +9,6 @@
 }
 
 body {
-    background-color: rgb(131, 139, 100);
     text-align: center;
     /* Generic project styles */
     font-family: 'Inconsolata', sans-serif;
@@ -20,6 +19,14 @@ h2,
 h3 {
     font-family: 'Rajdhani', sans-serif;
 }
+/* styling for background pic */
+#hero {
+    width: 100%;
+    height: 100%;
+    background: url(../images/halo-body-background.png) no-repeat center center/cover;
+    position: absolute;
+}
+
 
 /* styling for main page */
 .main-menu {
@@ -71,6 +78,7 @@ h3 {
     height: 45px;
     border-radius: 10px;
     font-size: 110%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 
 /* hover function for buttons */
@@ -82,7 +90,7 @@ h3 {
 
 /* styling for instructionsPage popUp */
 .instructionsPage {
-    background-color: rgb(135,146,80);
+    background: url(../images/halo-body-background.png) no-repeat center center/cover;
     opacity: 0;
     position: fixed;
     top: 0;
@@ -118,7 +126,7 @@ h3 {
 
 /* styling for playPage and Popup */
 .playPage {
-    background-color: rgb(135,146,80);
+    background: url(../images/halo-body-background.png) no-repeat center center/cover;
     opacity: 0;
     position: fixed;
     top: 0;
@@ -145,12 +153,15 @@ h3 {
 /* styling for game status */
 .game-status {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     max-width: 50%;
     padding: 3px;
     text-align: center;
     position: absolute;
-    top: 10%;
+    align-self: flex-start;
+    padding-top: 60px;
 }
 
 /* styling for memory game itself */
@@ -217,7 +228,7 @@ h3 {
 
 /* styling for scoreboard and popup */
 .scoreboard {
-    background-color: rgb(135,146,80);
+    background: url(../images/halo-body-background.png) no-repeat center center/cover;
     opacity: 0;
     position: fixed;
     top: 0;

@@ -23,7 +23,7 @@ h3 {
 #hero {
     width: 100%;
     height: 100%;
-    background: url(../images/halo-body-background.png) no-repeat center center/cover;
+    background: url(../images/halo-body-background.webp) no-repeat center center/cover;
     position: absolute;
 }
 
@@ -48,8 +48,8 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 1000px;
-    height: 1000px;
+    width: 90%;
+    height: 90%;
     margin-left: 20px;
     margin-right: 20px;
     background-color: rgb(142,167,47);
@@ -59,6 +59,7 @@ h3 {
 
 /* styling for logo */
 .logo {
+    width: 80%;
 }
 
 /* styling for h1 heading */
@@ -91,7 +92,7 @@ h3 {
 
 /* styling for instructionsPage popUp */
 .instructionsPage {
-    background: url(../images/halo-body-background.png) no-repeat center center/cover;
+    background: url(../images/halo-body-background.webp) no-repeat center center/cover;
     opacity: 0;
     position: fixed;
     top: 0;
@@ -120,8 +121,8 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 1000px;
-    height: 1000px;
+    width: 90%;
+    height: 90%;
     margin-left: 20px;
     margin-right: 20px;
     background-color: rgb(142,167,47);
@@ -131,7 +132,7 @@ h3 {
 
 /* styling for playPage and Popup */
 .playPage {
-    background: url(../images/halo-body-background.png) no-repeat center center/cover;
+    background: url(../images/halo-body-background.webp) no-repeat center center/cover;
     opacity: 0;
     position: fixed;
     top: 0;
@@ -186,8 +187,8 @@ h3 {
 }
 
 .memory-card {
-    width: 225px;
-    height: 225px;
+    width: 70px;
+    height: 70px;
     background: url(../images/background-image-card.webp) no-repeat center center/cover;
     border-radius: 0.3em;
     margin: 0.8em;
@@ -197,8 +198,9 @@ h3 {
 .memory-card-webp {
     visibility: hidden;
     object-fit: cover;
-    width: 225px;
-    height: 225px;
+    width: 70px;
+    height: 70px;
+    border-radius: 0.3em;
 }
 
 /* styling for End Game Score Display as Pop-up */
@@ -236,7 +238,7 @@ h3 {
 
 /* styling for scoreboard and popup */
 .scoreboard {
-    background: url(../images/halo-body-background.png) no-repeat center center/cover;
+    background: url(../images/halo-body-background.webp) no-repeat center center/cover;
     opacity: 0;
     position: fixed;
     top: 0;
@@ -274,3 +276,44 @@ h3 {
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 
+/* media query for tablets and larger screens */
+@media screen and (min-width: 768px) {
+
+    .memory-card {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .memory-card-webp {
+        width: 150px;
+        height: 150px;
+    }
+    
+}
+
+/* Large devices (laptops and desktops, 992px and more)*/
+@media screen and (min-width: 992px) {
+
+
+    /* Logo */
+    .logo {
+        width: unset;
+    }
+
+    #main-menu-homepage,
+    #instruction-container {
+        max-width: 1000px;
+        max-height: 1000px;
+    }
+
+    .memory-card {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .memory-card-webp {
+        width: 200px;
+        height: 200px;
+    }
+    
+}

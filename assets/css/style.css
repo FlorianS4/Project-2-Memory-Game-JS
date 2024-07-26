@@ -322,7 +322,7 @@ p {
     }
     
     .game-end-score {
-        height: 1300px;
-        width: 1150px;
+        max-height: 1300px;
+        max-width: 1150px;
     }
 }

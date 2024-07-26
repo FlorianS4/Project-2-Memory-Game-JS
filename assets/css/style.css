@@ -78,21 +78,13 @@ p {
 .buttons {
     width: 150px;
     align-self: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 3px 10px;
     margin: 20px;
-    height: 45px;
+    height: 50px;
     border-radius: 10px;
-    font-size: 110%;
+    font-size: 95%;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
-
-/* hover function for buttons */
-.buttons:hover {
-    background-color: #374E95;
-    color: white;
-}
-
 
 /* styling for instructionsPage popUp */
 .instructionsPage {
@@ -302,6 +294,19 @@ p {
     /* Logo */
     .logo {
         width: unset;
+    }
+
+    /* styling for buttons */
+    .buttons {
+        width: 175px;        
+        height: 55px;
+        cursor: pointer;
+    }
+
+    /* hover function for buttons */
+    .buttons:hover {
+        background-color: #374E95;
+        color: white;
     }
 
     #main-menu-homepage,

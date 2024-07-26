@@ -19,6 +19,10 @@ h2,
 h3 {
     font-family: 'Rajdhani', sans-serif;
 }
+
+p {
+    padding: 5px 10px;
+}
 /* styling for background pic */
 #hero {
     width: 100%;
@@ -209,8 +213,8 @@ h3 {
     position: fixed;
     z-index: 1;
 
-    width: 1300px;
-    height: 1150px;
+    width: 95%;
+    height: 95%;
     margin-left: 20px;
     margin-right: 20px;
     background-color: rgb(142,167,47);
@@ -267,8 +271,8 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 1000px;
-    height: 1000px;
+    width: 90%;
+    height: 90%;
     margin-left: 20px;
     margin-right: 20px;
     background-color: rgb(142,167,47);
@@ -301,7 +305,8 @@ h3 {
     }
 
     #main-menu-homepage,
-    #instruction-container {
+    #instruction-container,
+    #scoreboard-container {
         max-width: 1000px;
         max-height: 1000px;
     }
@@ -316,4 +321,8 @@ h3 {
         height: 200px;
     }
     
+    .game-end-score {
+        height: 1300px;
+        width: 1150px;
+    }
 }

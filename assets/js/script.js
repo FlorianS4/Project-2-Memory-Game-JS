@@ -13,7 +13,15 @@ closeInstructions.addEventListener("click", function() {
     instructions.classList.remove("open");
 });
 
-
+// Instructions via JS
+let instructionsGame = document.getElementById("gameInstructions");
+instructionsGame.innerText = "1. Press the 'Play the Game' button in the Main Menu\n 2. Select two cards.\n 3. If you select 2 cards, the game will count it as the first move and start the timer.\n 4. Your goal is to match 8 pairs of cards as fast as possible and with as little moves as possible.\n 5. After you complete the game there will be a Pop-up with your time and moves counter.\n 6. A button for scoreboard will show your score in a table.";
+instructionsGame.style.padding = "10px";
+instructionsGame.style.fontSize = "110%";
+instructionsGame.style.textAlign = "justify";
+instructionsGame.style.lineHeight = "1.1em";
+instructions.style.overflow = "auto";
+closeInstructions.style.margin = "3px";
 
 
 // Open Play page via Popup

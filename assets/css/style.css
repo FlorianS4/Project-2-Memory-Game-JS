@@ -397,3 +397,27 @@ p {
         max-width: 1000px;
     }
 }
+
+/* media query for phones in horizontal view */
+@media screen and (min-width: 768px) and (max-height: 768px) {
+
+    .memory-card {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .memory-card-webp {
+        width: 80px;
+        height: 80px;
+    }
+
+    .game-status {
+        top: 45%;
+        left: 5px;
+    }
+
+    #restartButton {
+        width: 130px;
+    }
+    
+}

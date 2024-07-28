@@ -30,7 +30,13 @@ const play = document.getElementById("play");
 
 
 openPlay.addEventListener("click", function() {
-    play.classList.add("open");
+    if (userName.value === ""){
+        alert("Enter a username to start");
+    } else {
+        event.preventDefault();
+        alert("Have fun!")
+        play.classList.add("open");
+    }
 });
 
 
@@ -45,7 +51,7 @@ openScoreboard.addEventListener("click", function() {
     scoreboard.classList.add("open");
 });
 
-// Memory Game Play
+// Memory Game Play variables
 let memoryElements = document.getElementsByClassName("memory-card");
 let memoryElementsArray = [...memoryElements];
 let webpElements = document.getElementsByClassName("memory-card-webp");
@@ -228,7 +234,20 @@ function scoreDisplay() {
 window.onload = startGame();
 
 
+// Name 
+let userName = document.getElementById("username");
 
+userName.addEventListener("keydown", function(event) {
+    if (event.key === "Enter"){
+        if (userName.value === ""){
+            alert("Enter a username to start");
+        } else {
+            event.preventDefault();
+            alert("Have fun!")
+            play.classList.add("open");
+        }
+    }
+});
 
 
 

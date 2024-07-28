@@ -74,6 +74,29 @@ p {
     padding-bottom: 20px;
 }
 
+/* styling for Input field */
+.hidden {
+    display: none;
+}
+
+.text-input {
+    width: 190px;
+    height: 40px;
+    padding: 3px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+input::placeholder {
+    font-size: 73%;
+    color: rgb(155, 155, 155);
+    font-weight: normal;
+    text-align: center;
+}
+
 /* styling for buttons */
 .buttons {
     width: 150px;

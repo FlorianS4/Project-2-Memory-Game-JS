@@ -28,7 +28,7 @@ closeInstructions.style.margin = "3px";
 const openPlay = document.getElementById("playPageOpen");
 const play = document.getElementById("play");
 
-
+// starts Memory Game if name is entered
 openPlay.addEventListener("click", function() {
     if (userName.value === ""){
         alert("Enter a username to start");
@@ -234,7 +234,7 @@ function scoreDisplay() {
 window.onload = startGame();
 
 
-// Name 
+// Start memory game via Enter Button and only if a username is given
 let userName = document.getElementById("username");
 
 userName.addEventListener("keydown", function(event) {
@@ -248,6 +248,7 @@ userName.addEventListener("keydown", function(event) {
         }
     }
 });
+
 
 
 

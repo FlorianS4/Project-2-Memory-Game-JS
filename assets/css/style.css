@@ -306,6 +306,36 @@ input::placeholder {
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 
+/* styling for scoreboard */
+#scoreboard-inner {
+    width: 100%;
+}
+
+#table-content {
+    border-collapse: collapse;
+    padding: 1rem;
+    align-items: center;
+    margin: auto;
+    overflow-x: auto;
+    width: 60%;
+}
+
+#table-content th,
+#table-content td {
+    border: solid 1px #000000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 18px;
+    padding: 5px;
+    height: 2em;
+}
+
+.name-scoreboard {
+    min-width: 150px;
+}
+
+.scoreboard-values {
+    min-width: 75px;
+}
+
 /* media query for tablets and larger screens */
 @media screen and (min-width: 768px) {
 

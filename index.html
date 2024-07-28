@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Stylesheet -->
-     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 
     <!-- Favicon -->
-     <link type="image/png" rel="icon" href="assets/favicon/halo-favicon.ico">
+    <link type="image/png" rel="icon" href="assets/favicon/halo-favicon.ico">
 
 </head>
+
 <body>
     <!-- Hero image -->
     <section id="hero"></section>
     <section class="main-menu">
         <div id="main-menu-homepage">
             <!-- link to main-menu via anchor element -->
-            <a href="index.html"><img class="logo" src="assets/images/halo-logo.webp" alt="logo" ></a>
-        
+            <a href="index.html"><img class="logo" src="assets/images/halo-logo.webp" alt="logo"></a>
+
             <h1 class="heading">Quiz</h1>
 
             <!-- Input field -->
             <div>
                 <label for="username" class="hidden">Username:</label>
-                <input type="text" name="username" id="username" class="text-input" placeholder="Enter your Username to start" required pattern="\S(.*\S)?">
+                <input type="text" name="username" id="username" class="text-input"
+                    placeholder="Enter your Username to start" required pattern="\S(.*\S)?">
             </div>
 
 
-            
+
             <div id="start-of-game-buttons">
                 <!-- instructions Page as Popup -->
                 <button class="buttons" id="instructionsPageOpen">How to Play</button>
@@ -44,112 +47,147 @@
                     <p id="gameInstructions"></p>
                     <button class="buttons" id="instructionsPageClose">Click me, if you got the rules</button>
                 </div>
-            </div>    
+            </div>
         </div>
-            <div class="playPage" id="play">
+        <div class="playPage" id="play">
 
-                <!-- Game status -->
-                <div class="game-status">
-                    <div class="move-counter" id="moveCounter"></div>
-                    <div class="timer" id="timer">0 mins 0 secs</div>
-                    <button class="restart-button buttons" id="restartButton" onclick="startGame()" aria-label="restart game">Restart Game</button>
-                </div>
+            <!-- Game status -->
+            <div class="game-status">
+                <div class="move-counter" id="moveCounter"></div>
+                <div class="timer" id="timer">0 mins 0 secs</div>
+                <button class="restart-button buttons" id="restartButton" onclick="startGame()"
+                    aria-label="restart game">Restart Game</button>
+            </div>
 
-                <!-- Table for webp images -->
-                <table class="memory-game">
-                    <tbody class="memory-grid">
-                        <tr class="memory-grid-row">
-                            <td class="memory-card">
-                                <img class="memory-card-webp" src="assets/images/master-chief-halo.webp" alt="Master Chief image">
-                            </td>
-                            <td class="memory-card">
-                                <img class="memory-card-webp" src="assets/images/arbiter-halo.webp" alt="Arbiter image">
-                            </td>
-                            <td class="memory-card">
-                                <img class="memory-card-webp" src="assets/images/cortana-halo.webp" alt="Cortana image">
-                            </td>
-                            <td class="memory-card">
-                                <img class="memory-card-webp" src="assets/images/avery-johnson-halo.webp" alt="Avery Johnson image">
-                            </td>
-                        </tr>
-                        <tr class="memory-grid-row">
-                            <td class="memory-card">
-                                <img class="memory-card-webp" src="assets/images/halo-energy-sword.webp" alt="Energy Sword image">
-                            </td>
-                            <td class="memory-card">
-                                <img class="memory-card-webp" src="assets/images/halo-ring-installation.webp" alt="Halo Installation image">
-                            </td>
-                            <td class="memory-card">
-                                <img class="memory-card-webp" src="assets/images/master-chief-helmet-halo.webp" alt="Master Chief Helmet image">
-                            </td>
-                            <td class="memory-card">
-                                <img class="memory-card-webp" src="assets/images/unsc-logo-halo.webp" alt="UNSC Logo image">
-                            </td>
-                        </tr>
-                        <tr class="memory-grid-row">
-                            <td class="memory-card">
-                                <img class="memory-card-webp" src="assets/images/master-chief-halo.webp" alt="Master Chief image">
-                            </td>
-                            <td class="memory-card">
-                                <img class="memory-card-webp" src="assets/images/arbiter-halo.webp" alt="Arbiter image">
-                            </td>
-                            <td class="memory-card">
-                                <img class="memory-card-webp" src="assets/images/cortana-halo.webp" alt="Cortana image">
-                            </td>
-                            <td class="memory-card">
-                                <img class="memory-card-webp" src="assets/images/avery-johnson-halo.webp" alt="Avery Johnson image">
-                            </td>
-                        </tr>
-                        <tr class="memory-grid-row">
-                            <td class="memory-card">
-                                <img class="memory-card-webp" src="assets/images/halo-energy-sword.webp" alt="Energy Sword image">
-                            </td>
-                            <td class="memory-card">
-                                <img class="memory-card-webp" src="assets/images/halo-ring-installation.webp" alt="Halo Installation image">
-                            </td>
-                            <td class="memory-card">
-                                <img class="memory-card-webp" src="assets/images/master-chief-helmet-halo.webp" alt="Master Chief Helmet image">
-                            </td>
-                            <td class="memory-card">
-                                <img class="memory-card-webp" src="assets/images/unsc-logo-halo.webp" alt="UNSC Logo image">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <!-- Table for webp images -->
+            <table class="memory-game">
+                <tbody class="memory-grid">
+                    <tr class="memory-grid-row">
+                        <td class="memory-card">
+                            <img class="memory-card-webp" src="assets/images/master-chief-halo.webp"
+                                alt="Master Chief image">
+                        </td>
+                        <td class="memory-card">
+                            <img class="memory-card-webp" src="assets/images/arbiter-halo.webp" alt="Arbiter image">
+                        </td>
+                        <td class="memory-card">
+                            <img class="memory-card-webp" src="assets/images/cortana-halo.webp" alt="Cortana image">
+                        </td>
+                        <td class="memory-card">
+                            <img class="memory-card-webp" src="assets/images/avery-johnson-halo.webp"
+                                alt="Avery Johnson image">
+                        </td>
+                    </tr>
+                    <tr class="memory-grid-row">
+                        <td class="memory-card">
+                            <img class="memory-card-webp" src="assets/images/halo-energy-sword.webp"
+                                alt="Energy Sword image">
+                        </td>
+                        <td class="memory-card">
+                            <img class="memory-card-webp" src="assets/images/halo-ring-installation.webp"
+                                alt="Halo Installation image">
+                        </td>
+                        <td class="memory-card">
+                            <img class="memory-card-webp" src="assets/images/master-chief-helmet-halo.webp"
+                                alt="Master Chief Helmet image">
+                        </td>
+                        <td class="memory-card">
+                            <img class="memory-card-webp" src="assets/images/unsc-logo-halo.webp" alt="UNSC Logo image">
+                        </td>
+                    </tr>
+                    <tr class="memory-grid-row">
+                        <td class="memory-card">
+                            <img class="memory-card-webp" src="assets/images/master-chief-halo.webp"
+                                alt="Master Chief image">
+                        </td>
+                        <td class="memory-card">
+                            <img class="memory-card-webp" src="assets/images/arbiter-halo.webp" alt="Arbiter image">
+                        </td>
+                        <td class="memory-card">
+                            <img class="memory-card-webp" src="assets/images/cortana-halo.webp" alt="Cortana image">
+                        </td>
+                        <td class="memory-card">
+                            <img class="memory-card-webp" src="assets/images/avery-johnson-halo.webp"
+                                alt="Avery Johnson image">
+                        </td>
+                    </tr>
+                    <tr class="memory-grid-row">
+                        <td class="memory-card">
+                            <img class="memory-card-webp" src="assets/images/halo-energy-sword.webp"
+                                alt="Energy Sword image">
+                        </td>
+                        <td class="memory-card">
+                            <img class="memory-card-webp" src="assets/images/halo-ring-installation.webp"
+                                alt="Halo Installation image">
+                        </td>
+                        <td class="memory-card">
+                            <img class="memory-card-webp" src="assets/images/master-chief-helmet-halo.webp"
+                                alt="Master Chief Helmet image">
+                        </td>
+                        <td class="memory-card">
+                            <img class="memory-card-webp" src="assets/images/unsc-logo-halo.webp" alt="UNSC Logo image">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-                <!-- Info after game, about score -->
-                <div class="game-end-score" id="gameEndScore">
-                    <div class="after-game-score-screen">
-                        <h2>Game Over</h2>
-                        <div class="score-screen-body">
-                            <p>
-                                Congratulations, you completed the game using <span id="totalMoves"></span> Moves
-                                <br>in <span id="gameTime"></span>
-                            </p>
-                        </div>
-                        <button class="buttons" id="scoreboardOpen">Scoreboard</button>
+            <!-- Info after game, about score -->
+            <div class="game-end-score" id="gameEndScore">
+                <div class="after-game-score-screen">
+                    <h2>Game Over</h2>
+                    <div class="score-screen-body">
+                        <p>
+                            Congratulations, you completed the game using <span id="totalMoves"></span> Moves
+                            <br>in <span id="gameTime"></span>
+                        </p>
                     </div>
-                </div>
-                <div class="scoreboard" id="scoreboard">
-                    <div id="scoreboard-container">
-                        <div class="scoreboardInner">
-                            <h2>SCOREBOARD</h2>
-                                <p>
-                                    Display Scoreboard here!
-                                </p>
-                            <a href="index.html"><button class="return-button buttons">Return to Main Page</button></a>
-                        </div>
-                    </div>   
+                    <button class="buttons" id="scoreboardOpen">Scoreboard</button>
                 </div>
             </div>
-     </section>
+            <div class="scoreboard" id="scoreboard">
+                <div id="scoreboard-container">
+                    <div id="scoreboard-inner">
+                        <h2>SCOREBOARD</h2>
+                        <div id="scoreboard-table">
+                            <table id="table-content">
+                                <tbody id="scoreboard-body">
+                                    <tr>
+                                        <th class="name-scoreboard">Username</th>
+                                        <th class="scoreboard-values">Moves</th>
+                                        <th class="scoreboard-values">Time</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="name-scoreboard"></td>
+                                        <td class="scoreboard-values"></td>
+                                        <td class="scoreboard-values"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="name-scoreboard"></td>
+                                        <td class="scoreboard-values"></td>
+                                        <td class="scoreboard-values"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="name-scoreboard"></td>
+                                        <td class="scoreboard-values"></td>
+                                        <td class="scoreboard-values"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <a href="index.html"><button class="return-button buttons">Return to Main Page</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Main menu section -->
-   
-  
+
+
 
     <!-- JavaScript -->
-     <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
 
 <!-- 

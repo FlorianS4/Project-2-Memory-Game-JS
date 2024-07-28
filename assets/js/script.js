@@ -34,7 +34,8 @@ openPlay.addEventListener("click", function() {
         alert("Enter a username to start");
     } else {
         event.preventDefault();
-        alert("Have fun!")
+        localStorage.setItem("userName", userName.value);
+        alert("Have fun!");
         play.classList.add("open");
     }
 });
@@ -45,9 +46,12 @@ openPlay.addEventListener("click", function() {
 // Open Scoreboard in Play Page
 const openScoreboard = document.getElementById("scoreboardOpen");
 const scoreboard = document.getElementById("scoreboard");
+let nameFirst = document.getElementById("name-first");
+let movesFirst = document.getElementById("moves-first");
+let timesFirst = document.getElementById("times-first");
 
 
-openScoreboard.addEventListener("click", function() {
+openScoreboard.addEventListener("click", function() {   
     scoreboard.classList.add("open");
 });
 
@@ -220,6 +224,13 @@ function endGame() {
     // show total Game Moves and Game Time in end screen
     totalGameMoves.innerHTML = moves;
     totalGameTimeDisplay.innerHTML = totalGameTime;
+    
+    // send end results to scoraboard
+    localStorage.setItem("moves", moves);
+    localStorage.setItem("times", totalGameTime);
+    nameFirst.innerHTML = localStorage.getItem("userName");
+    movesFirst.innerText = localStorage.getItem("moves");
+    timesFirst.innerText = localStorage.getItem("times"); 
 
     matchedMemorys = [];
     scoreDisplay();
@@ -243,6 +254,7 @@ userName.addEventListener("keydown", function(event) {
             alert("Enter a username to start");
         } else {
             event.preventDefault();
+            localStorage.setItem("userName", userName.value);
             alert("Have fun!")
             play.classList.add("open");
         }

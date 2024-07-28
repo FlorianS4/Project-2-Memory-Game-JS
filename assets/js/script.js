@@ -225,7 +225,7 @@ function endGame() {
     totalGameMoves.innerHTML = moves;
     totalGameTimeDisplay.innerHTML = totalGameTime;
     
-    // send end results to scoraboard
+    // send end results to scoreboard
     localStorage.setItem("moves", moves);
     localStorage.setItem("times", totalGameTime);
     nameFirst.innerHTML = localStorage.getItem("userName");

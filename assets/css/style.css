@@ -330,10 +330,12 @@ input::placeholder {
 
 .name-scoreboard {
     min-width: 150px;
+    font-weight: bold;
 }
 
 .scoreboard-values {
     min-width: 75px;
+    font-weight: bold;
 }
 
 /* media query for tablets and larger screens */

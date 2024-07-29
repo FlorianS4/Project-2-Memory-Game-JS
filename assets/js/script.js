@@ -292,3 +292,10 @@ userName.addEventListener("keydown", function(event) {
         }
     }
 });
+
+// button to return from scoreboard to main menu
+let mainMenuButton = document.getElementById("main-menu-button");
+
+mainMenuButton.addEventListener("click", function(){
+    window.location.replace("index.html");
+});

@@ -100,7 +100,7 @@ function shuffle(array) {
 function startGame() {
     //Shuffle cards
     let shuffledWebp = shuffle(webpElementsArray);
-    for(i = 0; i < shuffledWebp.length; i++) {
+    for(let i = 0; i < shuffledWebp.length; i++) {
         //remove images from each memory card
         memoryElements[i].innerHTML = "";
         //add shuffled memory images to each memory card
@@ -108,12 +108,12 @@ function startGame() {
         memoryElements[i].type = `${shuffledWebp[i].alt}`;
         //remove all extra classes for game play
         memoryElements[i].classList.remove("show", "open", "match", "disabled");
-        memoryElements[i].children[0].classList.remove("show-webp")
+        memoryElements[i].children[0].classList.remove("show-webp");
     }
 
     //listen for events on memory cards
     for(let i = 0; i < memoryElementsArray.length; i++) {
-        memoryElementsArray[i].addEventListener("click", displayMemory)
+        memoryElementsArray[i].addEventListener("click", displayMemory);
     }
 
     //reset moves on game reset
@@ -182,7 +182,7 @@ function unmatched() {
         openedMemorys[1].children[0].classList.remove("show-webp");
         enable();
         openedMemorys = [];
-    }, 1100)
+    }, 1100);
 }
 
 /**
@@ -191,7 +191,7 @@ function unmatched() {
 function disable() {
     memoryElementsArray.filter((memory, i, memoryElementsArray) => {
         memory.classList.add("disabled");
-    })
+    });
 }
 
 /**
@@ -203,7 +203,7 @@ function enable() {
         for(let i=0; i < matchedMemorys.length; i++) {
             matchedMemorys[i].classList.add("disabled");
         }
-    })
+    });
 }
 
 /**
@@ -236,7 +236,7 @@ function startTimer() {
             hour++;
             minute = 0;
         }
-    }, 1000)
+    }, 1000);
 }
 
 
@@ -271,7 +271,7 @@ function endGame() {
 function scoreDisplay() {
     endScreen.addEventListener("click", function() {
         endScreen.classList.remove("show-game-end-score");
-    })
+    });
 }
 
 window.onload = startGame();
@@ -287,7 +287,7 @@ userName.addEventListener("keydown", function(event) {
         } else {
             event.preventDefault();
             localStorage.setItem("userName", userName.value);
-            alert("Have fun!")
+            alert("Have fun!");
             play.classList.add("open");
         }
     }

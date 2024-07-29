@@ -1,14 +1,14 @@
-// Open Instructions via Popup
+// variables for instruction Page open
 const openInstructions = document.getElementById("instructionsPageOpen");
 const closeInstructions = document.getElementById("instructionsPageClose");
 const instructions = document.getElementById("instructions");
 
-
+// Open Instructions via Popup
 openInstructions.addEventListener("click", function() {
     instructions.classList.add("open");
 });
 
-
+// Closes Instructions Popup
 closeInstructions.addEventListener("click", function() {
     instructions.classList.remove("open");
 });
@@ -28,7 +28,7 @@ closeInstructions.style.margin = "3px";
 const openPlay = document.getElementById("playPageOpen");
 const play = document.getElementById("play");
 
-// starts Memory Game if name is entered
+// starts memory game if play button is clicked and name is entered in input field
 openPlay.addEventListener("click", function() {
     if (userName.value === ""){
         alert("Enter a username to start");
@@ -43,14 +43,14 @@ openPlay.addEventListener("click", function() {
 
 
 
-// Open Scoreboard in Play Page
+// variables for scoreboard Page open
 const openScoreboard = document.getElementById("scoreboardOpen");
 const scoreboard = document.getElementById("scoreboard");
 let nameFirst = document.getElementById("name-first");
 let movesFirst = document.getElementById("moves-first");
 let timesFirst = document.getElementById("times-first");
 
-
+// Open Scoreboard in Play Page
 openScoreboard.addEventListener("click", function() {   
     scoreboard.classList.add("open");
 });
@@ -76,7 +76,9 @@ let second = 0,
 
 
 
-    //Shuffle function called Fisher-Yates Shuffle
+/**
+ * shuffle the memory game cards at the start, using the Fisher-Yates shuffle method
+ */
 function shuffle(array) {
     let currentIndex = array.length,
         temporaryValue,
@@ -92,7 +94,9 @@ function shuffle(array) {
     return array;
 }
 
-// Start Game function
+/**
+ * function thats calls the shuffle function and starts the game
+ */
 function startGame() {
     //Shuffle cards
     let shuffledWebp = shuffle(webpElementsArray);
@@ -121,7 +125,9 @@ function startGame() {
     clearInterval(interval);
 }
 
-// Display Card function
+/**
+ * function that displays memory cards during game
+ */
 function displayMemory() {
     this.children[0].classList.toggle("show-webp");
     this.classList.toggle("open");
@@ -130,7 +136,9 @@ function displayMemory() {
     memoryOpen(this);
 }
 
-// Memory Game function
+/**
+ * function that checks whether a card pair is the same or not and proceeds accordingly
+ */
 function memoryOpen(memory) {
     openedMemorys.push(memory);
     let len = openedMemorys.length;
@@ -144,6 +152,9 @@ function memoryOpen(memory) {
     }
 }
 
+/**
+ * function for matching pairs, let them stay open and removes them out of the array
+ */
 function matched() {
     openedMemorys[0].classList.add("match");
     openedMemorys[1].classList.add("match");
@@ -157,6 +168,9 @@ function matched() {
     }
 }
 
+/**
+ * function for unmatched pairs, turns them back offer and puts the memory cards back into the array
+ */
 function unmatched() {
     openedMemorys[0].classList.add("unmatched");
     openedMemorys[1].classList.add("unmatched");
@@ -171,12 +185,18 @@ function unmatched() {
     }, 1100)
 }
 
+/**
+ * function that disables card from beeing clicked if card is already shown
+ */
 function disable() {
     memoryElementsArray.filter((memory, i, memoryElementsArray) => {
         memory.classList.add("disabled");
     })
 }
 
+/**
+ * enable card clicking again
+ */
 function enable() {
     memoryElementsArray.filter((memory, i, memoryElementsArray) => {
         memory.classList.remove("disabled");
@@ -186,6 +206,9 @@ function enable() {
     })
 }
 
+/**
+ * function for move counter, starts timer after first move is made (turning over two cards)
+ */
 function moveCounter() {
     moves++;
     counter.innerHTML = `${moves} move(s)`;
@@ -198,6 +221,9 @@ function moveCounter() {
     }
 }
 
+/**
+ * timer function
+ */
 function startTimer() {
     interval = setInterval(function() {
         timer.innerHTML = `${minute} mins ${second} secs`;
@@ -213,7 +239,10 @@ function startTimer() {
     }, 1000)
 }
 
-//End of Memory game function
+
+/**
+ * end of memory game function
+ */
 function endGame() {
     clearInterval(interval);
     totalGameTime = timer.innerHTML;
@@ -236,6 +265,9 @@ function endGame() {
     scoreDisplay();
 }
 
+/**
+ * display score function
+ */
 function scoreDisplay() {
     endScreen.addEventListener("click", function() {
         endScreen.classList.remove("show-game-end-score");

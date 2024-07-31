@@ -48,6 +48,15 @@
 ### Typography
 ### Imagery
 ### Color Scheme
+
+As the Website has a background picture, i wanted to keep the color scheme used on the site small to not overwhelm the user. 
+
+* I have used `#000000` as the primary color for text used on the site.
+* I have used `#8EA72F` as the background color.
+* I have used `#9B9B9B` as the placeholder text color for the input field.
+* I have used `#374E95` as the color for the hover functions on the buttons.
+
+![Halo Memory Game Color Palette](/assets/docs/readme-images/color-palette-project-2.png)
 ## Wireframes
 <details>
 

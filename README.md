@@ -140,7 +140,6 @@ HTML, CSS, JavaScript
 - [Google Fonts](https://fonts.google.com/) - to import  fonts used on website.
 - [FontAwesome](https://fontawesome.com/) - for footer's and navbar's icon.
 - [Google Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)- for troubleshooting, debugging, inspecting page's elements, testing responsiveness and styling elements.
-- [unsplash](https://unsplash.com/de) and [pexels](https://www.pexels.com/) - for free images.
 - [Favicon.cc](https://www.favicon.cc/) - for website's favicon.
 - [Gitpod](https://gitpod.io/) - IDE to develop the website.
 - [GitHub](https://GitHub.com/) - for version control and hosting.
@@ -176,7 +175,7 @@ How to clone:
 - Select the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 - Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 - Type 'git clone' into the terminal and then paste the link you copied in step 3. and enter.
-- A clone will be created
+- A clone will be created.
 
 ## Credits
 ### Content
@@ -185,6 +184,16 @@ How to clone:
 - [Stack Overflow](https://stackoverflow.com/)
 - [W3Schools](https://www.w3schools.com/)
 ### Media
+- [Background Picture Website](https://wall.alphacoders.com/big.php?i=1346558#google_vignette) - Playbox36
+- [Background Picture Memory Game Cards](https://www.pinterest.com/pin/469359592389271886/)
+- [Avery Johnson](https://halo.fandom.com/wiki/Avery_Johnson?file=SSgt_Avery_Johnson%2C_UNSC_Marine_Corps.JPG)
+- [Halo Energy Sword](https://www.artstation.com/artwork/B1021z) - Sophia L.
+- [Arbiter](https://halo.fandom.com/wiki/Arbiter?file=Halo_Wars_Art_0.jpg)
+- [UNSC Logo](https://www.etsy.com/in-en/listing/1682361709/halo-unsc-united-nations-space-command) - found the picture on ETSY, the shop is as of writing this not available, will add credits if it comes back online
+- [Master Chief](https://www.redbull.com/gb-en/halo-master-chief-collection-esports) - Microsoft
+- [Cortana](https://www.pinterest.com/pin/250372060527873847/) - Cosmonauta Guerrero AAMA
+- [Master Chief Helmet](https://www.slashfilm.com/799175/halo-star-pablo-schreiber-explains-why-its-crucial-that-master-chief-remove-his-helmet-exclusive/) - Microsoft
+- [Installation 5 Halo Ring](https://halo.fandom.com/de/wiki/Installation_05?file=New_Installation_05_Pic_Halo_2_Aniversery.jpg)
 
 ## Fixed Bugs
 

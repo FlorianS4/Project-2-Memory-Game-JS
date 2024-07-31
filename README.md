@@ -46,7 +46,21 @@
 #### Frequent User
 ## Design
 ### Typography
+
+[Google Fonts](https://fonts.google.com/) was used for the following fonts:
+- ![Rajdhani font image](/assets/docs/readme-images/google-font-for-h.png)
+
+    [Rajdhani](https://fonts.google.com/specimen/Rajdhani?preview.text=Halo%20Memory%20Game&query=Rajdhani) was chosen for my Headings.
+- ![Inconsolata font image](/assets/docs/readme-images/google-font-for-body.png)
+
+    [Inconsolata](https://fonts.google.com/specimen/Inconsolata?preview.text=Halo%20Memory%20Game&query=Inconsolata) was chosen for my body.
+- I picked both those fonts, because they remind me of the font used in Halo.
+- Sans Serif was chosen as a backup font, in case the main font is not imported into the website, or there is a problem with the browser.
+
 ### Imagery
+
+All Images were taken from different websites. I give credit to them in the [credits](#credits) section. The images selected show different characters from the Halo Universe.
+
 ### Color Scheme
 
 As the Website has a background picture, i wanted to keep the color scheme used on the site small to not overwhelm the user. 
@@ -109,6 +123,7 @@ Scoreboard:
 
 ## Features
 ### Favicon
+![Favicon](/assets/docs/readme-images/favicon-picture.png)
 ### Main Page
 ### Game Instruction Page
 ### Game Page

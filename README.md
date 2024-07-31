@@ -54,17 +54,48 @@
 <summary>Desktop Wireframe</summary>
 Main Page:
 
+![Wireframe Main Page Desktop](/assets/docs/readme-images/start-side-desktop.png)
 
-Sign Up Page:
+Game Instruction Page:
 
+![Wireframe Game Instruction Page Desktop](/assets/docs/readme-images/how-to-play-side-desktop.png)
 
+Memory Game:
+
+![Wireframe Memory Game Desktop](/assets/docs/readme-images/play-game-side-desktop.png)
+
+End of Game Screen:
+
+![Wireframe End of Game Screen Desktop](/assets/docs/readme-images/end-game-screen-desktop.png)
+
+Scoreboard:
+
+![Wireframe Scoreboard Desktop](/assets/docs/readme-images/scoreboard-desktop.png)
 
 </details>
 
 <details>
 
-<summary></summary>
+<summary>Mobile Wireframe</summary>
+Main Page:
 
+![Wireframe Main Page Mobile](/assets/docs/readme-images/start-side-mobile.png)
+
+Game Instruction Page:
+
+![Wireframe Game Instruction Page Mobile](/assets/docs/readme-images/how-to-play-mobile.png)
+
+Memory Game:
+
+![Wireframe Memory Game Mobile](/assets/docs/readme-images/play-game-side-mobile.png)
+
+End of Game Screen:
+
+![Wireframe End of Game Screen Mobile](/assets/docs/readme-images/end-game-screen-mobile.png)
+
+Scoreboard:
+
+![Wireframe Scoreboard Mobile](/assets/docs/readme-images/scoreboard-mobile.png)
 </details>
 
 ## Features

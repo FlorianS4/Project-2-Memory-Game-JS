@@ -27,6 +27,9 @@ Visit the deployed site: [Halo Memory Game](https://florians4.github.io/Project-
 No errors were shown for the CSS stylesheet from the W3C CSS Validator
 - [styles.css - validator result](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fflorians4.github.io%2FProject-2-Memory-Game-JS%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 #### JavaScript
+[JSHint](https://jshint.com/) was used to validate the JavaScript.
+
+![JSHint Result](/assets/docs/readme-images/jhint-testing.png)
 
 ### Accessibility
 #### Lighthouse Testing
@@ -73,14 +76,26 @@ The website was successfully tested on the following browsers:
     - Smartphones (Iphone Xr, Samsung Galaxy S2, Iphone 8, Iphone 11 Pro, Ipad Pro 11", Huawei P40 Pro)
     - Laptops
     - Desktop PCs
-    
+
 ### User Testing
 
 First Time User:
 
+- I want to take a Halo Memory Game.
+
+- I want the site to be responsive to my device.
+
+- I want to play the game whenever, wherever.
+
+- I want the side to be easy to navigate.
+
 Returning User:
 
+- I want to be able to play the game with memory cards in a different order.
+
 Frequent User:
+
+- I want to be able to see my score to see how I am performing.
 
 ### Manual Testing
 

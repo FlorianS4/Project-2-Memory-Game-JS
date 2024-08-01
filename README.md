@@ -54,8 +54,17 @@ Are you up to the task? Then visit [Halo Memory Game](https://florians4.github.i
 ## User Experience
 ### User Stories
 #### First Time User
+- I want to take a Halo Memory Game.
+- I want the site to be responsive to my device.
+- I want to play the game whenever, wherever.
+- I want the side to be easy to navigate.
+
 #### Returning User
+- I want to be able to play the game with memory cards in a different order.
+
 #### Frequent User
+- I want to be able to see my score to see how I am performing.
+
 ## Design
 ### Typography
 

@@ -34,7 +34,6 @@ openPlay.addEventListener("click", function() {
         alert("Enter a username to start");
     } else {
         event.preventDefault();
-        localStorage.setItem("userName", userName.value);
         alert("Have fun!");
         play.classList.add("open");
     }
@@ -239,6 +238,10 @@ function startTimer() {
     }, 1000);
 }
 
+// for Scoreboard used the following videos https://www.youtube.com/watch?v=jfOv18lCMmw and https://www.youtube.com/watch?v=DFhmNLKwwGw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=10
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+const maxHighScores = 3;
+const highScoresList = document.getElementById("highScoresList");
 
 /**
  * end of memory game function
@@ -253,17 +256,26 @@ function endGame() {
     // show total Game Moves and Game Time in end screen
     totalGameMoves.innerHTML = moves;
     totalGameTimeDisplay.innerHTML = totalGameTime;
-    
-    // send end results to scoreboard
-    localStorage.setItem("moves", moves);
-    localStorage.setItem("times", totalGameTime);
-    nameFirst.innerHTML = localStorage.getItem("userName");
-    movesFirst.innerText = localStorage.getItem("moves");
-    timesFirst.innerText = localStorage.getItem("times"); 
+
+    const score = {
+        score: moves,
+        name: userName.value
+    };
+    highScores.push(score);
+    highScores.sort( (a,b) => a.score - b.score);
+    highScores.splice(3);
+
+    localStorage.setItem("highScores", JSON.stringify(highScores));
+
+    highScoresList.innerHTML = highScores.map( score => {
+        return `<li class="high-score">${score.name} moves:${score.score}</li>`
+    }).join("");
 
     matchedMemorys = [];
     scoreDisplay();
 }
+
+
 
 /**
  * display score function
@@ -286,7 +298,6 @@ userName.addEventListener("keydown", function(event) {
             alert("Enter a username to start");
         } else {
             event.preventDefault();
-            localStorage.setItem("userName", userName.value);
             alert("Have fun!");
             play.classList.add("open");
         }
@@ -299,3 +310,4 @@ let mainMenuButton = document.getElementById("main-menu-button");
 mainMenuButton.addEventListener("click", function(){
     window.location.replace("index.html");
 });
+

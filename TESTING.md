@@ -42,12 +42,9 @@ Mobile
 ![Lighthouse Testing Mobile](/assets/docs/readme-images/lighthouse-testting-mobile.png)
 
 #### Wave Testing
-Wave testing on main page
+Wave test
 
-
-
-Wave testing on sign up page
-
+![Wave Test](/assets/docs/readme-images/wave-testing.png)
 
 ### Links Testing
 - All internal links are working correctly and redirecting to the correct sections.

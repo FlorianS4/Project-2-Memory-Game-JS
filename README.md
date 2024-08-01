@@ -2,6 +2,13 @@
 
 ![Memory Game Halo Am I Responsive Image](/assets/docs/readme-images/am-i-responsive.png)
 
+You like Halo and are good in memorizing pictures.
+
+Than this Halo memory game is perfect for you. It shows some of the most memorable characters and thins out of the Halo Universe. And they come in pairs!
+
+Test your skill in recognicing pairs and doing it as fast as possible.
+
+Are you up to the task? Then visit [Halo Memory Game](https://florians4.github.io/Project-2-Memory-Game-JS/)!!
 
 ## Content
 - [Site Owner Goals](#site-owner-goals)
@@ -175,7 +182,7 @@ HTML, CSS, JavaScript
 This site was deployed to GitHub pages. Instructions:
 
 - Login to Github.
-- Go to the GitHub repository: FlorianS4/project-1-soccer, navigate to the Settings tab.
+- Go to the GitHub repository: FlorianS4/Project-2-Memory-Game-JS, navigate to the Settings tab.
 - Select the Pages tab on the menu on the left side.
 - Under Source, choose main from the Branch dropdown menu. TSave it.
 - The page will refresh itself and the website is now deployed with a text indicating such.
@@ -183,12 +190,12 @@ This site was deployed to GitHub pages. Instructions:
 ### Running the project locally
 How to Fork:
 - Login to Github
-- Go to the GitHub repository: FlorianS4/project-1-soccer
+- Go to the GitHub repository: Project-2-Memory-Game-JS
 - Select the Fork button on the right at the top
 
 How to clone:
 - Login to Github
-- Go to the GitHub repository: FlorianS4/project-1-soccer
+- Go to the GitHub repository: Project-2-Memory-Game-JS
 - Select the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 - Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 - Type 'git clone' into the terminal and then paste the link you copied in step 3. and enter.

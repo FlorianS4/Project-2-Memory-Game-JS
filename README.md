@@ -1,5 +1,8 @@
 # Memory Game -Halo
 
+![Memory Game Halo Am I Responsive Image](/assets/docs/readme-images/am-i-responsive.png)
+
+
 ## Content
 - [Site Owner Goals](#site-owner-goals)
 - [User Experience](#user-experience)
@@ -125,8 +128,21 @@ Scoreboard:
 ### Favicon
 ![Favicon](/assets/docs/readme-images/favicon-picture.png)
 ### Main Page
+![Main Page](/assets/docs/readme-images/main-page.png)
+- The main menu has two buttons with a hover function.
+
+![Hover Function Button](/assets/docs/readme-images/hover-function-button.png)
+- This feature is implemented for every button on the website.
+- The User also has to select a name, to start the game. I put a blank space validator in it.
 ### Game Instruction Page
+![Instruction Pop-up](/assets/docs/readme-images/instruction-page-pop-up.png)
+- After the user read the rules, they can go back to the main menu and start the game.
 ### Game Page
+![Memory Game](/assets/docs/readme-images/memory-game.png)
+- The memory game consist of 4x4 squares with 8 pairs of cards.
+
+![Timer and Move-Counter](/assets/docs/readme-images/memory-game-timer-and-move-counter.png)
+- The time and move-counter starts after the first 2 cards are turned over.
 ### Memory Game
 ### End of Game Screen
 ### Scoreboard

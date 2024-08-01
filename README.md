@@ -144,6 +144,7 @@ Scoreboard:
 ![Timer and Move-Counter](/assets/docs/readme-images/memory-game-timer-and-move-counter.png)
 - The time and move-counter starts after the first 2 cards are turned over.
 ### Memory Game
+
 ### End of Game Screen
 ### Scoreboard
 

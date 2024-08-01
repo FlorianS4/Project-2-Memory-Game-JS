@@ -1,5 +1,8 @@
 # Memory Game - Halo - Testing
 
+![Memory Game Halo Am I Responsive Image](/assets/docs/readme-images/am-i-responsive.png)
+
+Visit the deployed site: [Halo Memory Game](https://florians4.github.io/Project-2-Memory-Game-JS/)
 
 
 ## Content
@@ -20,25 +23,23 @@
 
 ### Validator Testing
 #### HTML
+[Index.HTML - validator result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fflorians4.github.io%2FProject-2-Memory-Game-JS%2F)
 #### CSS
+No errors were shown for the CSS stylesheet from the W3C CSS Validator
+- [styles.css - validator result](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fflorians4.github.io%2FProject-2-Memory-Game-JS%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 #### JavaScript
+
 ### Accessibility
 #### Lighthouse Testing
 Desktop
 
-- Main Page 
+Desktop
 
-
-
-
+![Lighthouse Testing Desktop](/assets/docs/readme-images/lighthouse-testing-desktop.png)
 
 Mobile
 
-- Main Page
-
-
-
-
+![Lighthouse Testing Mobile](/assets/docs/readme-images/lighthouse-testting-mobile.png)
 
 #### Wave Testing
 Wave testing on main page

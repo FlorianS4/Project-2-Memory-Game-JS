@@ -33,18 +33,32 @@ No errors were shown for the CSS stylesheet from the W3C CSS Validator
 #### Lighthouse Testing
 Desktop
 
-Desktop
+Main:
 
-![Lighthouse Testing Desktop](/assets/docs/readme-images/lighthouse-testing-desktop.png)
+![Lighthouse testing Main on Desktop](/assets/docs/readme-images/lighthouse-testing-desktop.png)
+
+404:
+
+![Lighthouse testing 404 on Desktop](/assets/docs/readme-images/lighthouse-testing-404-desktop.png)
 
 Mobile
 
-![Lighthouse Testing Mobile](/assets/docs/readme-images/lighthouse-testting-mobile.png)
+Main:
+
+![Lighthouse testing Main on Mobile](/assets/docs/readme-images/lighthouse-testting-mobile.png)
+
+404:
+
+![Lighthouse testing 404 on Mobile](/assets/docs/readme-images/lighthouse-testing-404-mobile.png)
 
 #### Wave Testing
-Wave test
+Wave test Main page:
 
-![Wave Test](/assets/docs/readme-images/wave-testing.png)
+![Wave Test Main Page](/assets/docs/readme-images/wave-testing.png)
+
+Wave test 404 page:
+
+![Wave Test 404 Page](/assets/docs/readme-images/wave-testing-404.png)
 
 ### Links Testing
 - All internal links are working correctly and redirecting to the correct sections.

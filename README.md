@@ -2,11 +2,11 @@
 
 ![Memory Game Halo Am I Responsive Image](/assets/docs/readme-images/am-i-responsive.png)
 
-You like Halo and are good in memorizing pictures.
+You like Halo and are good at memorizing pictures?
+Then this Halo memory game is perfect for you! 
 
-Than this Halo memory game is perfect for you. It shows some of the most memorable characters and thins out of the Halo Universe. And they come in pairs!
-
-Test your skill in recognicing pairs and doing it as fast as possible.
+It shows some of the most memorable characters, things out of the Halo-universe and they come in pairs!
+Test your skill in recognizing pairs and doing it as fast as possible!
 
 Are you up to the task? Then visit [Halo Memory Game](https://florians4.github.io/Project-2-Memory-Game-JS/)!!
 
@@ -24,14 +24,13 @@ Are you up to the task? Then visit [Halo Memory Game](https://florians4.github.i
 - [Wireframes](#wireframes)
 - [Features](#features)
     - [Favicon](#favicon)
-
-
-
     - [Main Page](#main-page)
-    - [Game Instruction Page](#game-instruction-page)
+    - [Game Instruction Pop-up](#game-instruction-pop-up)
+    - [Game Pop-up](#game-pop-up)
     - [Memory Game](#memory-game)
     - [End of Game Screen](#end-of-game-screen)
     - [Scoreboard](#scoreboard)
+    - [404 Page](#404-page)
 - [Testing](#testing)
 - [Technologies Used](#technologies-used)
     - [Languages](#languages)
@@ -60,11 +59,11 @@ Are you up to the task? Then visit [Halo Memory Game](https://florians4.github.i
 [Google Fonts](https://fonts.google.com/) was used for the following fonts:
 - ![Rajdhani font image](/assets/docs/readme-images/google-font-for-h.png)
 
-    [Rajdhani](https://fonts.google.com/specimen/Rajdhani?preview.text=Halo%20Memory%20Game&query=Rajdhani) was chosen for my Headings.
+    [Rajdhani](https://fonts.google.com/specimen/Rajdhani?preview.text=Halo%20Memory%20Game&query=Rajdhani) was chosen for my headings.
 - ![Inconsolata font image](/assets/docs/readme-images/google-font-for-body.png)
 
     [Inconsolata](https://fonts.google.com/specimen/Inconsolata?preview.text=Halo%20Memory%20Game&query=Inconsolata) was chosen for my body.
-- I picked both those fonts, because they remind me of the font used in Halo.
+- I picked both those fonts, because they reminded me of the fonts used in Halo.
 - Sans Serif was chosen as a backup font, in case the main font is not imported into the website, or there is a problem with the browser.
 
 ### Imagery
@@ -73,7 +72,7 @@ All Images were taken from different websites. I give credit to them in the [cre
 
 ### Color Scheme
 
-As the Website has a background picture, i wanted to keep the color scheme used on the site small to not overwhelm the user. 
+The website has a background picture in line with the following scheme. I wanted to keep the color scheme I used on the site small to not overwhelm the user.
 
 * I have used `#000000` as the primary color for text used on the site.
 * I have used `#8EA72F` as the background color.
@@ -89,9 +88,9 @@ Main Page:
 
 ![Wireframe Main Page Desktop](/assets/docs/readme-images/start-side-desktop.png)
 
-Game Instruction Page:
+Game Instruction:
 
-![Wireframe Game Instruction Page Desktop](/assets/docs/readme-images/how-to-play-side-desktop.png)
+![Wireframe Game Instruction Pop-up Desktop](/assets/docs/readme-images/how-to-play-side-desktop.png)
 
 Memory Game:
 
@@ -114,9 +113,9 @@ Main Page:
 
 ![Wireframe Main Page Mobile](/assets/docs/readme-images/start-side-mobile.png)
 
-Game Instruction Page:
+Game Instruction Pop-up:
 
-![Wireframe Game Instruction Page Mobile](/assets/docs/readme-images/how-to-play-mobile.png)
+![Wireframe Game Instruction Pop-up Mobile](/assets/docs/readme-images/how-to-play-mobile.png)
 
 Memory Game:
 
@@ -136,25 +135,40 @@ Scoreboard:
 ![Favicon](/assets/docs/readme-images/favicon-picture.png)
 ### Main Page
 ![Main Page](/assets/docs/readme-images/main-page.png)
-- The main menu has two buttons with a hover function.
+- The main menu has two buttons with a hover function and an input element.
 
 ![Hover Function Button](/assets/docs/readme-images/hover-function-button.png)
-- This feature is implemented for every button on the website.
-- The User also has to select a name, to start the game. I put a blank space validator in it.
-### Game Instruction Page
+- While hovering the buttons background color turns blue and the font color white. This feature is implemented for every button on the website.
+- The User also has to select a name, to start the game in the input element. I put a blank space validator in it. The user can either enter a name by pressing the enter key or by pressing the play the game button.
+- All elements respond to the screen size.
+ 
+### Game Instruction Pop-up
 ![Instruction Pop-up](/assets/docs/readme-images/instruction-page-pop-up.png)
+- The How to play button can be clicked and a pop-up will appear with the rules
 - After the user read the rules, they can go back to the main menu and start the game.
-### Game Page
+- All elements respond to the screen size.
+### Game Pop-up
 ![Memory Game](/assets/docs/readme-images/memory-game.png)
-- The memory game consist of 4x4 squares with 8 pairs of cards.
+- The memory game consists of 4x4 squares with 8 different pairs of cards which are randomly shuffled.
+- All elements respond to the screen size.
 
 ![Timer and Move-Counter](/assets/docs/readme-images/memory-game-timer-and-move-counter.png)
-- The time and move-counter starts after the first 2 cards are turned over.
+- The time and move-counter starts after the first 2 cards are turned over.This is explained in the How to Play pop-up.
+- There is no limit to the timer or the moves as the user should see this memory as something fun and not something to compete in.
+- Below the timer and move counter is a restart button. The user is able to restart whenever he or she likes to. After clicking the button all cards will turn over and be re-shuffled. Times and Moves are restarted as well.
 ### Memory Game
 
 ### End of Game Screen
+![End of Game Screen](/assets/docs/readme-images/end-of-game-screen.png)
+- After the User complets the game, there will be display of his score.
+- A button will redirect the user to the scoreboard, or he/she can always restart the game with the restart button, mentioned above.
 ### Scoreboard
-
+![Scoreboard](/assets/docs/readme-images/scoreboard.png)
+- If the users continues to the scoreboard, his last score will be registered into tabel for display.
+- He can then return to the main page with a button.
+### 404 Page
+![404 Page](/assets/docs/readme-images/404-page.png)
+- When an error occurs or a wrong input is given to the url the 404-page will shop up with the information on how to be redirected to the landing page.
 ## Testing
 See the testing results in the [TESTING.md](TESTING.md) file.
 ## Technologies Used

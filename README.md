@@ -47,6 +47,9 @@ Are you up to the task? Then visit [Halo Memory Game](https://florians4.github.i
 
 
 ## Site Owner Goals
+- to provide the user with a fun, quick memory game with images out of the Halo Universe
+- to provide a fun experience for people who have no idea about Halo.
+- to provide the user with a challenge to remember the pictures and to complete the quiz as fast as possible.
 
 ## User Experience
 ### User Stories
@@ -133,6 +136,7 @@ Scoreboard:
 ## Features
 ### Favicon
 ![Favicon](/assets/docs/readme-images/favicon-picture.png)
+
 ### Main Page
 ![Main Page](/assets/docs/readme-images/main-page.png)
 - The main menu has two buttons with a hover function and an input element.
@@ -147,6 +151,7 @@ Scoreboard:
 - The How to play button can be clicked and a pop-up will appear with the rules
 - After the user read the rules, they can go back to the main menu and start the game.
 - All elements respond to the screen size.
+
 ### Game Pop-up
 ![Memory Game](/assets/docs/readme-images/memory-game.png)
 - The memory game consists of 4x4 squares with 8 different pairs of cards which are randomly shuffled.
@@ -156,24 +161,32 @@ Scoreboard:
 - The time and move-counter starts after the first 2 cards are turned over.This is explained in the How to Play pop-up.
 - There is no limit to the timer or the moves as the user should see this memory as something fun and not something to compete in.
 - Below the timer and move counter is a restart button. The user is able to restart whenever he or she likes to. After clicking the button all cards will turn over and be re-shuffled. Times and Moves are restarted as well.
+
 ### Memory Game
+![Memory Gameplay](/assets/docs/readme-images/memory-game-play.gif)
+- Showing the above descripted features in game. As most people are familiar with memory games the concept should be easy to understand even without reading the instructions.
 
 ### End of Game Screen
 ![End of Game Screen](/assets/docs/readme-images/end-of-game-screen.png)
-- After the User complets the game, there will be display of his score.
+- After the user complets the game, there will be pop-up display of his/her score.
 - A button will redirect the user to the scoreboard, or he/she can always restart the game with the restart button, mentioned above.
+
 ### Scoreboard
 ![Scoreboard](/assets/docs/readme-images/scoreboard.png)
-- If the users continues to the scoreboard, his last score will be registered into tabel for display.
-- He can then return to the main page with a button.
+- If the users continues to the scoreboard, his/her last score will be registered into a tabel for display.
+- He/She can then return to the main page with a button.
+
 ### 404 Page
 ![404 Page](/assets/docs/readme-images/404-page.png)
-- When an error occurs or a wrong input is given to the url the 404-page will shop up with the information on how to be redirected to the landing page.
+- When an error occurs or a wrong input is given to the url the 404-page will show up with the information on how to be redirected to the landing page.
+
 ## Testing
 See the testing results in the [TESTING.md](TESTING.md) file.
+
 ## Technologies Used
 ### Languages
 HTML, CSS, JavaScript
+
 ### Programs Used - Frameworks - Libraries
 - [Google Fonts](https://fonts.google.com/) - to import  fonts used on website.
 - [FontAwesome](https://fontawesome.com/) - for footer's and navbar's icon.

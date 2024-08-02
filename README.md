@@ -58,7 +58,7 @@ Are you up to the task? Then visit [Halo Memory Game](https://florians4.github.i
 - I want to take a Halo Memory Game.
 - I want the site to be responsive to my device.
 - I want to play the game whenever, wherever.
-- I want the side to be easy to navigate.
+- I want the website to be easy to navigate.
 
 #### Returning User
 - I want to be able to play the game with memory cards in a different order.
@@ -153,7 +153,7 @@ Scoreboard:
 
 ![Hover Function Button](/assets/docs/readme-images/hover-function-button.png)
 - While hovering the buttons background color turns blue and the font color white. This feature is implemented for every button on the website.
-- The User also has to select a name, to start the game in the input element. I put a blank space validator in it. The user can either enter a name by pressing the enter key or by pressing the play the game button.
+- The user also has to select a name, to start the game in the input element. I put a blank space validator in it. The user can either enter a name by pressing the enter key or by pressing the play the game button.
 - All elements respond to the screen size.
  
 ### Game Instruction Pop-up
@@ -161,9 +161,9 @@ Scoreboard:
 - The How to play button can be clicked and a pop-up will appear with the rules
 - After the user read the rules, they can go back to the main menu and start the game.
 - All elements respond to the screen size.
-- There are alerts for the user, an error alert if they forget to enter a name, or an success alert if they enter an username.
 
 ![Alert no Username](/assets/docs/readme-images/alert-for-no-username.png) ![Alert when Username](/assets/docs/readme-images/alert-if-username-was-entered.png)
+- There are alerts for the user: an error alert if they forget to enter a name, or an success alert if they enter an username.
 
 ### Game Pop-up
 ![Memory Game](/assets/docs/readme-images/memory-game.png)
@@ -186,7 +186,7 @@ Scoreboard:
 
 ### Scoreboard
 ![Scoreboard](/assets/docs/readme-images/scoreboard.png)
-- If the users continues on to the scoreboard, his/her score will be displayed, as long as it its under the top 3 users.
+- If the users continues on to the scoreboard, his/her score will be displayed, as long as it its under the top 3 users in the same localStorage.
 - The score is depending on how many moves it took to complete the game.
 - He/She can then return to the main page with a button.
 
@@ -227,7 +227,7 @@ This site was deployed to GitHub pages. Instructions:
 - Login to Github.
 - Go to the GitHub repository: FlorianS4/Project-2-Memory-Game-JS, navigate to the Settings tab.
 - Select the Pages tab on the menu on the left side.
-- Under Source, choose main from the Branch dropdown menu. TSave it.
+- Under Source, choose main from the Branch dropdown menu. Save it.
 - The page will refresh itself and the website is now deployed with a text indicating such.
 
 ### Running the project locally
@@ -246,20 +246,20 @@ How to clone:
 
 ## Credits
 ### Content
-- I used [this You Tube tutorial](https://www.youtube.com/watch?v=r_PL0K2fGkY) by [Florian Pop](https://www.youtube.com/@FlorinPop) to implement Popup for Instructions, the Game itself, Game End Screen and Scoreboard. I wanted to avaid creating addtional HTML Page so i used Pop-up.
+- I used [this You Tube tutorial](https://www.youtube.com/watch?v=r_PL0K2fGkY) by [Florian Pop](https://www.youtube.com/@FlorinPop) to implement Popup for Instructions, the Game itself, Game End Screen and Scoreboard. I wanted to avoid creating an addtional HTML Page so i used a pop-up.
 - I used different templates to learn from for the memory quiz:
     - [Geeks for Geeks template](https://www.geeksforgeeks.org/build-a-memory-card-game-using-html-css-and-javascript/)
     - [You Tube Video Tutorial](https://www.youtube.com/watch?v=dqqxkrKhfS4) by [Coding Artist](https://www.youtube.com/@CodingArtist)
     - [Memory Game Template via Medium](https://aadaobi.medium.com/building-a-memory-matching-game-in-javascript-48e792c7b563) by [Michelle Aniuchi](https://aadaobi.medium.com/).
 
-- For the shuffle function i had to read into the [Fisher Yates Shuffle](https://bost.ocks.org/mike/shuffle/) method.
+- For the shuffle function I had to read into the [Fisher Yates Shuffle](https://bost.ocks.org/mike/shuffle/) method.
 
 - As the JavaScript modules of the Code Institute Diploma did not cover local storage, I had to do a bit of research into this topic:
-    - I used this [video tutorial](https://www.youtube.com/watch?v=DFhmNLKwwGw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=10) on YouTube by [James Q Quick](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw) for how to save the name and the movfe count to an object, that would be saved into an array in local storage. 
+    - I used this [video tutorial](https://www.youtube.com/watch?v=DFhmNLKwwGw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=10) on YouTube by [James Q Quick](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw) for how to save the name and the move count to an object, that would be saved into an array in local storage. 
     - I used this [video tutorial](https://www.youtube.com/watch?v=jfOv18lCMmw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=10) on Youtube by [James Q Quick](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw) to learn how to insert the local storage into the scoreboard.
 
 ### Resources Used
-- Code Institute's lessons (love running project)
+- Code Institute's lessons (love maths project)
 - [Stack Overflow](https://stackoverflow.com/)
 - [W3Schools](https://www.w3schools.com/)
 ### Media
@@ -277,11 +277,11 @@ How to clone:
 ## Fixed Bugs
 - Pictures in Memory Game would't turn over.
 
-    * Had to renamed paramaters so it would work again.
+    * Had to rename parameters so it would work again.
 
 - Wanted to save score, without a database, as I couldn't find anything in Code Institute Diploma, however the score would disappear after refreshing the Page.
 
-    * Had to use local storage, so the move count would be safed.
+    * Had to use local storage, so the move count would be saved through learning about it in the the credits mentioned videos.
 
 - Timer wouldn't stop after completing memory game.
 

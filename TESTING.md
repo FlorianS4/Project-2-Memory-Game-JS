@@ -99,7 +99,7 @@ First Time User:
 
         * The user can play the game whenever they like on whichever device they like, as long as they have internet connection.
 
-- I want the side to be easy to navigate.
+- I want the website to be easy to navigate.
 
         * The website layout is structured so it is user friendly, with a common and easy to understand layout. The user can understand the purpose of the website without having to look deeply into it.
 

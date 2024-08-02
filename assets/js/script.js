@@ -31,10 +31,18 @@ const play = document.getElementById("play");
 // starts memory game if play button is clicked and name is entered in input field
 openPlay.addEventListener("click", function() {
     if (userName.value === ""){
-        alert("Enter a username to start");
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "You forgot to enter a username!",
+          });
     } else {
         event.preventDefault();
-        alert("Have fun!");
+        Swal.fire({
+            title: "Have fun!",
+            text: "Start the game by turning over a pair of memory cards!",
+            icon: "success"
+          });
         play.classList.add("open");
     }
 });
@@ -268,7 +276,7 @@ function endGame() {
     localStorage.setItem("highScores", JSON.stringify(highScores));
 
     highScoresList.innerHTML = highScores.map( score => {
-        return `<li class="high-score">${score.name} moves:${score.score}</li>`
+        return `<li class="high-score">${score.name} moves:${score.score}</li>`;
     }).join("");
 
     matchedMemorys = [];
@@ -295,10 +303,18 @@ let userName = document.getElementById("username");
 userName.addEventListener("keydown", function(event) {
     if (event.key === "Enter"){
         if (userName.value === ""){
-            alert("Enter a username to start");
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "You forgot to enter a username!",
+              });
         } else {
             event.preventDefault();
-            alert("Have fun!");
+            Swal.fire({
+                title: "Have fun!",
+                text: "Start the game by turning over a pair of memory cards!",
+                icon: "success"
+              });
             play.classList.add("open");
         }
     }

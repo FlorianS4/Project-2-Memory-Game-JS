@@ -307,6 +307,7 @@ userName.addEventListener("keydown", function(event) {
     if (event.key === "Enter"){
         if (userName.value === ""){
             // customized alerts via https://sweetalert2.github.io/
+            event.preventDefault();
             Swal.fire({
                 icon: "error",
                 title: "Oops...",
@@ -335,5 +336,4 @@ mainMenuButton.addEventListener("click", function(){
 function ignoreSpaces(event) {
     var character = event ? event.which : window.event.keyCode;
       if (character == 32) return false;
-      alert
-  }
+  };

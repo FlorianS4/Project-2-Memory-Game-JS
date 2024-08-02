@@ -50,7 +50,7 @@ Are you up to the task? Then visit [Halo Memory Game](https://florians4.github.i
 - to provide the user with a fun, quick memory game with images out of the Halo Universe
 - to provide a fun experience for people who have no idea about Halo.
 - to provide the user with a challenge to remember the pictures and to complete the quiz as fast as possible.
-- to provide a scoreboard wich remembers the old scores of the user, so the user can come back and try to bet it
+- to provide a scoreboard wich logs the old scores of the user, so the user can come back and try to beat it.
 
 ## User Experience
 ### User Stories
@@ -64,7 +64,7 @@ Are you up to the task? Then visit [Halo Memory Game](https://florians4.github.i
 - I want to be able to play the game with memory cards in a different order.
 
 #### Frequent User
-- I want to be able to see my score to see how I am performing and to bet my old highscore.
+- I want to be able to see my score to see how I am performing and to beat my old highscore.
 
 ## Design
 ### Typography
@@ -161,7 +161,7 @@ Scoreboard:
 - The How to play button can be clicked and a pop-up will appear with the rules
 - After the user read the rules, they can go back to the main menu and start the game.
 - All elements respond to the screen size.
-- There are alerts for the user, if they forget to enter a name, or if they enter an username.
+- There are alerts for the user, an error alert if they forget to enter a name, or an success alert if they enter an username.
 
 ![Alert no Username](/assets/docs/readme-images/alert-for-no-username.png) ![Alert when Username](/assets/docs/readme-images/alert-if-username-was-entered.png)
 
@@ -186,7 +186,7 @@ Scoreboard:
 
 ### Scoreboard
 ![Scoreboard](/assets/docs/readme-images/scoreboard.png)
-- If the users continues to the scoreboard, his/her score will be displayed, if it is under the best 3 scores achieved.
+- If the users continues on to the scoreboard, his/her score will be displayed, as long as it its under the top 3 users.
 - The score is depending on how many moves it took to complete the game.
 - He/She can then return to the main page with a button.
 

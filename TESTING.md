@@ -22,7 +22,8 @@ Visit the deployed site: [Halo Memory Game](https://florians4.github.io/Project-
 
 ### Validator Testing
 #### HTML
-[Index.HTML - validator result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fflorians4.github.io%2FProject-2-Memory-Game-JS%2F)
+No errors were shown for the HTML document on the W3C Markup Validation Service
+- [Index.HTML - validator result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fflorians4.github.io%2FProject-2-Memory-Game-JS%2F)
 #### CSS
 No errors were shown for the CSS stylesheet from the W3C CSS Validator
 - [styles.css - validator result](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fflorians4.github.io%2FProject-2-Memory-Game-JS%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)

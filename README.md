@@ -218,6 +218,7 @@ HTML, CSS, JavaScript
 - [W3C HTML Markup Validator](https://validator.w3.org/) to validate HTML code.
 - [JShint JavaScript Validator](https://jshint.com/) to validate JS code.
 - [TinyPNG](https://tinypng.com/) - to compress images to reduce file size without a reduction in quality.
+- [Sweetalert2](https://sweetalert2.github.io/) - to make the alerts look better.
 
 
 ## Deployment
@@ -245,6 +246,18 @@ How to clone:
 
 ## Credits
 ### Content
+- I used [this You Tube tutorial](https://www.youtube.com/watch?v=r_PL0K2fGkY) by [Florian Pop](https://www.youtube.com/@FlorinPop) to implement Popup for Instructions, the Game itself, Game End Screen and Scoreboard. I wanted to avaid creating addtional HTML Page so i used Pop-up.
+- I used different templates to learn from for the memory quiz:
+    - [Geeks for Geeks template](https://www.geeksforgeeks.org/build-a-memory-card-game-using-html-css-and-javascript/)
+    - [You Tube Video Tutorial](https://www.youtube.com/watch?v=dqqxkrKhfS4) by [Coding Artist](https://www.youtube.com/@CodingArtist)
+    - [Memory Game Template via Medium](https://aadaobi.medium.com/building-a-memory-matching-game-in-javascript-48e792c7b563) by [Michelle Aniuchi](https://aadaobi.medium.com/).
+
+- For the shuffle function i had to read into the [Fisher Yates Shuffle](https://bost.ocks.org/mike/shuffle/) method.
+
+- As the JavaScript modules of the Code Institute Diploma did not cover local storage, I had to do a bit of research into this topic:
+    - I used this [video tutorial](https://www.youtube.com/watch?v=DFhmNLKwwGw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=10) on YouTube by [James Q Quick](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw) for how to save the name and the movfe count to an object, that would be saved into an array in local storage. 
+    - I used this [video tutorial](https://www.youtube.com/watch?v=jfOv18lCMmw&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=10) on Youtube by [James Q Quick](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw) to learn how to insert the local storage into the scoreboard.
+
 ### Resources Used
 - Code Institute's lessons (love running project)
 - [Stack Overflow](https://stackoverflow.com/)
@@ -262,8 +275,24 @@ How to clone:
 - [Installation 5 Halo Ring](https://halo.fandom.com/de/wiki/Installation_05?file=New_Installation_05_Pic_Halo_2_Aniversery.jpg)
 
 ## Fixed Bugs
+- Pictures in Memory Game would't turn over.
+
+    * Had to renamed paramaters so it would work again.
+
+- Wanted to save score, without a database, as I couldn't find anything in Code Institute Diploma, however the score would disappear after refreshing the Page.
+
+    * Had to use local storage, so the move count would be safed.
+
+- Timer wouldn't stop after completing memory game.
+
+    * Added function EndGame to stop the timer.
+
+- Blank space validation wasn't working.
+
+    * Removed blank space validation from HTML and added a function to JS that ignores white space inputs.
 
 ## Future Content
+- I'm pretty happy with the website, would probably add the time to complete to the scoreboard aswell.
 
 ## Acknowledgments
 My mentor Jubril Akolade for his guidance, input and support.

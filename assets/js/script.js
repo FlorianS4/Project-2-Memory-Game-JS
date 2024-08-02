@@ -1,3 +1,4 @@
+// Po up created via tutorial https://www.youtube.com/watch?v=r_PL0K2fGkY
 // variables for instruction Page open
 const openInstructions = document.getElementById("instructionsPageOpen");
 const closeInstructions = document.getElementById("instructionsPageClose");
@@ -31,6 +32,7 @@ const play = document.getElementById("play");
 // starts memory game if play button is clicked and name is entered in input field
 openPlay.addEventListener("click", function() {
     if (userName.value === ""){
+        // customized alerts via https://sweetalert2.github.io/
         Swal.fire({
             icon: "error",
             title: "Oops...",
@@ -62,6 +64,7 @@ openScoreboard.addEventListener("click", function() {
     scoreboard.classList.add("open");
 });
 
+// memory game created via tutorial on https://aadaobi.medium.com/building-a-memory-matching-game-in-javascript-48e792c7b563
 // Memory Game Play variables
 let memoryElements = document.getElementsByClassName("memory-card");
 let memoryElementsArray = [...memoryElements];
@@ -303,6 +306,7 @@ let userName = document.getElementById("username");
 userName.addEventListener("keydown", function(event) {
     if (event.key === "Enter"){
         if (userName.value === ""){
+            // customized alerts via https://sweetalert2.github.io/
             Swal.fire({
                 icon: "error",
                 title: "Oops...",
@@ -327,3 +331,9 @@ mainMenuButton.addEventListener("click", function(){
     window.location.replace("index.html");
 });
 
+// function to ignore white space input via https://stackoverflow.com/questions/13766015/is-it-possible-to-configure-a-required-field-to-ignore-white-space
+function ignoreSpaces(event) {
+    var character = event ? event.which : window.event.keyCode;
+      if (character == 32) return false;
+      alert
+  }

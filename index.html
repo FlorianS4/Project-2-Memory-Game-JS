@@ -28,7 +28,7 @@
             <div>
                 <label for="username" class="hidden">Username:</label>
                 <input type="text" name="username" id="username" class="text-input"
-                    placeholder="Enter your Username to start" pattern="\S(.*\S)?" aria-label="Enter Username" required>
+                    placeholder="Enter your Username to start" aria-label="Enter Username" onkeypress="return ignoreSpaces(event)" required>
             </div>
 
 
@@ -170,7 +170,7 @@
     <!-- JavaScript -->
     <script src="assets/js/script.js"></script>
 
-    <!-- Sweet Alert 2 integration -->
+    <!-- Sweet Alert 2 integration via https://sweetalert2.github.io/ -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 

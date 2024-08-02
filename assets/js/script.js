@@ -55,9 +55,6 @@ openPlay.addEventListener("click", function() {
 // variables for scoreboard Page open
 const openScoreboard = document.getElementById("scoreboardOpen");
 const scoreboard = document.getElementById("scoreboard");
-let nameFirst = document.getElementById("name-first");
-let movesFirst = document.getElementById("moves-first");
-let timesFirst = document.getElementById("times-first");
 
 // Open Scoreboard in Play Page
 openScoreboard.addEventListener("click", function() {   
@@ -336,4 +333,4 @@ mainMenuButton.addEventListener("click", function(){
 function ignoreSpaces(event) {
     var character = event ? event.which : window.event.keyCode;
       if (character == 32) return false;
-  };
+  }

@@ -1,4 +1,4 @@
-// Po up created via tutorial https://www.youtube.com/watch?v=r_PL0K2fGkY
+// Pop ups created via tutorial https://www.youtube.com/watch?v=r_PL0K2fGkY
 // variables for instruction Page open
 const openInstructions = document.getElementById("instructionsPageOpen");
 const closeInstructions = document.getElementById("instructionsPageClose");
